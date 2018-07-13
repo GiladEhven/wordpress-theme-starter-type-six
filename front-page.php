@@ -23,7 +23,7 @@
                 	$data = array();
 
                 	$data['sample-one'] = 'This is a';
-                	$data['sample-two'] = 'PAGE type...';
+                	$data['sample-two'] = 'FRONT PAGE type...';
 
                 }
 
