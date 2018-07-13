@@ -31,6 +31,9 @@
 
                 $this->set_requested_resource();
 
+                require_once( get_stylesheet_directory() . '/public/php/views/class-view-404.php' );
+                $view_404 = new View_404( $data );
+
             }
 
             public function get_requested_resource() {

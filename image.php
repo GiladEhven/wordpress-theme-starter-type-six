@@ -31,6 +31,9 @@
 
                 $this->set_requested_resource();
 
+                require_once( get_stylesheet_directory() . '/public/php/views/class-view-image.php' );
+                $view_image = new View_Image( $data );
+
             }
 
             public function get_requested_resource() {

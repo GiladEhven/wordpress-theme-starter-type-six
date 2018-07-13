@@ -31,6 +31,9 @@
 
                 $this->set_requested_resource();
 
+                require_once( get_stylesheet_directory() . '/public/php/views/class-view-single.php' );
+                $view_single = new View_Single( $data );
+
             }
 
             public function get_requested_resource() {

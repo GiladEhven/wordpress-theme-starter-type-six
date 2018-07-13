@@ -31,6 +31,9 @@
 
                 $this->set_requested_resource();
 
+                require_once( get_stylesheet_directory() . '/public/php/views/class-view-front-page.php' );
+                $view_front_page = new View_Front_Page( $data );
+
             }
 
             public function get_requested_resource() {

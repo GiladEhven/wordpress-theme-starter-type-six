@@ -31,6 +31,9 @@
 
                 $this->set_requested_resource();
 
+                require_once( get_stylesheet_directory() . '/public/php/views/class-view-category.php' );
+                $view_category = new View_Category( $data );
+
             }
 
             public function get_requested_resource() {

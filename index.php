@@ -31,6 +31,9 @@
 
                 $this->set_requested_resource();
 
+                require_once( get_stylesheet_directory() . '/public/php/views/class-view-index.php' );
+                $view_index = new View_Index( $data );
+
             }
 
             public function get_requested_resource() {

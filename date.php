@@ -31,6 +31,9 @@
 
                 $this->set_requested_resource();
 
+                require_once( get_stylesheet_directory() . '/public/php/views/class-view-date.php' );
+                $view_date = new View_Date( $data );
+
             }
 
             public function get_requested_resource() {
