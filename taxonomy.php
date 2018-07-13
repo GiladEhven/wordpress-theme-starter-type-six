@@ -20,7 +20,10 @@
 
                 } else {
 
-                	//
+                	$data = array();
+
+                	$data['sample-one'] = 'This is a';
+                	$data['sample-two'] = 'TAXONOMY type...';
 
                 }
 
