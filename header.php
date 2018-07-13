@@ -43,3 +43,5 @@
     }
 
     $template_header = new Template_Header();
+
+    echo '<h1>This is a HEADER...</h1>';

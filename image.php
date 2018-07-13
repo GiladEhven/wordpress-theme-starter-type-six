@@ -43,3 +43,5 @@
     }
 
     $template_image = new Template_Image();
+
+    echo '<h1>This is an IMAGE...</h1>';

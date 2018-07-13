@@ -43,3 +43,5 @@
     }
 
     $template_author = new Template_Author();
+
+    echo '<h1>This is a AUTHOR...</h1>';

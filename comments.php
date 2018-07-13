@@ -43,3 +43,5 @@
     }
 
     $template_comment = new Template_Comment();
+
+    echo '<h1>This is a COMMENT...</h1>';

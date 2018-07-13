@@ -22,15 +22,15 @@
                     require_once( get_stylesheet_directory() . '/admin/php/class-admin-resources.php' );
                     require_once( get_stylesheet_directory() . '/admin/php/class-clean-admin.php' );
 
-                    $acf_options_pages = new Acf_Options_Pages;
-                    $admin_resources   = new Admin_Resources;
-                    $clean_admin       = new Clean_Admin;
+//                  $acf_options_pages = new Acf_Options_Pages;
+//                  $admin_resources   = new Admin_Resources;
+//                  $clean_admin       = new Clean_Admin;
 
                 } else {
 
                     require_once( get_stylesheet_directory() . '/public/php/class-public-resources.php' );
 
-                    $public_resources  = new Public_Resources;
+//                  $public_resources  = new Public_Resources;
 
                 }
 

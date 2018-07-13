@@ -43,3 +43,5 @@
     }
 
     $template_Search = new Template_Search();
+
+    echo '<h1>This is a SEARCH...</h1>';

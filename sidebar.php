@@ -43,3 +43,5 @@
     }
 
     $template_sidebar = new Template_Sidebar();
+
+    echo '<h1>This is a SIDEBAR...</h1>';

@@ -43,3 +43,5 @@
     }
 
     $template_attachment = new Template_Attachment();
+
+    echo '<h1>This is a ATTACHMENT...</h1>';
