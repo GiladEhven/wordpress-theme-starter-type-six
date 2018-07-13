@@ -49,5 +49,3 @@
     }
 
     $template_index = new Template_Index();
-
-    echo '<h1>This is the INDEX...</h1>';

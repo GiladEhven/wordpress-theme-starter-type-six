@@ -49,5 +49,3 @@
     }
 
     $template_date = new Template_Date();
-
-    echo '<h1>This is a DATE...</h1>';

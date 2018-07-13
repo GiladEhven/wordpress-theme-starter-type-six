@@ -49,5 +49,3 @@
     }
 
     $template_page = new Template_Page();
-
-    echo '<h1>This is a PAGE...</h1>';

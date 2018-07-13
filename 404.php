@@ -49,5 +49,3 @@
     }
 
     $template_404 = new Template_404();
-
-    echo '<h1>This is a 404...</h1>';

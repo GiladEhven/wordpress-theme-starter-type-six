@@ -49,5 +49,3 @@
     }
 
     $template_category = new Template_Category();
-
-    echo '<h1>This is a CATEGORY...</h1>';

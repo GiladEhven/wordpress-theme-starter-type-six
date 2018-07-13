@@ -49,5 +49,3 @@
     }
 
     $template_footer = new Template_Footer();
-
-    echo '<h1>This is a FOOTER...</h1>';

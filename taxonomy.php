@@ -49,5 +49,3 @@
     }
 
     $template_taxonomy = new Template_Taxonomy();
-
-    echo '<h1>This is a TAXONOMY...</h1>';

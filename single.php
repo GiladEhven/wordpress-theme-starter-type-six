@@ -49,5 +49,3 @@
     }
 
     $template_single = new Template_Single();
-
-    echo '<h1>This is a SINGLE...</h1>';

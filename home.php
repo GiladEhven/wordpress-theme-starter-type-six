@@ -49,5 +49,3 @@
     }
 
     $template_home = new Template_Home();
-
-    echo '<h1>This is a HOME...</h1>';

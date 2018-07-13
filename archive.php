@@ -49,5 +49,3 @@
     }
 
     $template_archive = new Template_Archive();
-
-    echo '<h1>This is a ARCHIVE...</h1>';

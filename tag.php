@@ -49,5 +49,3 @@
     }
 
     $template_tag = new Template_Tag();
-
-    echo '<h1>This is a TAG...</h1>';

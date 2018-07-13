@@ -49,5 +49,3 @@
     }
 
     $template_front_page = new Template_Front_Page();
-
-    echo '<h1>This is a FRONT PAGE...</h1>';
