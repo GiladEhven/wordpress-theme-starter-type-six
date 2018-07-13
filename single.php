@@ -20,10 +20,7 @@
 
                 } else {
 
-                	$data = array();
-
-                	$data['sample-one'] = 'This is a';
-                	$data['sample-two'] = 'SINGLE type...';
+                	$data = $this->get_acf_data();
 
                 }
 
@@ -36,12 +33,27 @@
 
             }
 
+            //  -------------------------  GETTERS AND SETTERS  -------------------------  //
+
             public function get_requested_resource() {
                 return $this->requested_resource;
             }
 
             protected function set_requested_resource() {
                 $this->requested_resource = 'undetermined';
+            }
+
+            //  ----------------------------  MISSION LOGIC  ----------------------------  //
+
+            protected function get_acf_data() {
+
+                	$data = array();
+
+                	$data['sample-one'] = 'This is a';
+                	$data['sample-two'] = 'SINGLE type...';
+
+                	return $data;
+
             }
 
         }

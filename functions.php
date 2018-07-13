@@ -41,6 +41,8 @@
 
             }
 
+            //  -------------------------  GETTERS AND SETTERS  -------------------------  //
+
             public function get_theme_name() {
                 return $this->theme_name;
             }
