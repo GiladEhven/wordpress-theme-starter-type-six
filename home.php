@@ -2,9 +2,9 @@
 
 	namespace Ehven\Gilad\WordPress\Themes\Starters\TypeSix;
 
-    if ( ! class_exists( __NAMESPACE__ . 'Template_404' ) ) {
+    if ( ! class_exists( __NAMESPACE__ . 'Template_Home' ) ) {
 
-        class Template_404 {
+        class Template_Home {
 
             private $requested_resource;
 
@@ -42,4 +42,4 @@
 
     }
 
-    $template_404 = new Template_404();
+    $template_home = new Template_Home();
