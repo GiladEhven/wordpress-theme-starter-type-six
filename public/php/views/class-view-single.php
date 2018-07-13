@@ -2,6 +2,8 @@
 
 	namespace Ehven\Gilad\WordPress\Themes\Starters\TypeSix;
 
+    if ( ! defined( 'ABSPATH' ) ) exit( 'Nothing to see here. Go <a href="/">home</a>.' );
+
 	class View_Single { public function __construct( $data ) {
 
 	//  --------------------------  DO NOT EDIT ABOVE THIS LINE  --------------------------  //

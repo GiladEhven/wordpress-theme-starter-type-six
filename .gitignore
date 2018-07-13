@@ -1,5 +1,24 @@
+
+# FILES
+
+.DS_Store
+
+Thumbs.db
+
+# FILE TYPES
+
+*.diff
+*.err
 *.log
+*.sass-cache
+*.sublime-project
+*.sublime-workspace
 *.syncdb
-vendor/
+*.vi
+
+# FOLDERS
+
+.svn
+
 vendor
 wp-content
