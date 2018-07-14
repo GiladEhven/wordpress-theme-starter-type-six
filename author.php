@@ -8,6 +8,24 @@
 
         class Template_Author {
 
+        	private $author_bio;
+
+        	private $author_email;
+
+        	private $author_name_display;
+
+        	private $author_name_first;
+
+        	private $author_name_last;
+
+        	private $author_name_nick;
+
+        	private $author_name_user;
+
+        	private $author_pic;
+
+        	private $author_website;
+
             private $requested_resource;
 
             private $text_domain;
@@ -37,8 +55,16 @@
 
             //  -------------------------  GETTERS AND SETTERS  -------------------------  //
 
+            public function get_author_data() {
+                return true;
+            }
+
             public function get_requested_resource() {
                 return $this->requested_resource;
+            }
+
+            protected function set_author_data() {
+                //
             }
 
             protected function set_requested_resource() {
