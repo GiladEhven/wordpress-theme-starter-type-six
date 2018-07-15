@@ -60,4 +60,12 @@
 
     }
 
-    $template_date = new Template_Date();
+    get_header(); ?>
+
+                <section id="main">
+
+                    <?php $template_date = new Template_Date(); ?>
+
+                </section><!-- / # main -->
+
+    <?php get_footer();

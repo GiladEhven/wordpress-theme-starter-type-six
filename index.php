@@ -60,4 +60,12 @@
 
     }
 
-    $template_index = new Template_Index();
+    get_header(); ?>
+
+                <section id="main">
+
+                    <?php $template_index = new Template_Index(); ?>
+
+                </section><!-- / # main -->
+
+    <?php get_footer();

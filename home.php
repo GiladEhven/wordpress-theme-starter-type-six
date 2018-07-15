@@ -60,4 +60,12 @@
 
     }
 
-    $template_home = new Template_Home();
+    get_header(); ?>
+
+                <section id="main">
+
+                    <?php $template_home = new Template_Home(); ?>
+
+                </section><!-- / # main -->
+
+    <?php get_footer();

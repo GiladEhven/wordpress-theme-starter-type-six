@@ -60,10 +60,26 @@
 
     }
 
-    $template_single = new Template_Single();
+    get_header(); ?>
 
-    if ( comments_open() || get_comments_number() ) {
+                <section id="main">
 
-        comments_template();
+                    <?php
 
-    }
+                        $template_single = new Template_Single();
+
+                    ?>
+
+                </section><!-- / # main -->
+
+                <?php
+
+                    if ( comments_open() || get_comments_number() ) {
+
+                        comments_template();
+
+                    }
+
+                ?>
+
+    <?php get_footer();

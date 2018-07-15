@@ -60,4 +60,12 @@
 
     }
 
-    $template_category = new Template_Category();
+    get_header(); ?>
+
+                <section id="main">
+
+                    <?php $template_category = new Template_Category(); ?>
+
+                </section><!-- / # main -->
+
+    <?php get_footer();

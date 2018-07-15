@@ -60,4 +60,12 @@
 
     }
 
-    $template_archive = new Template_Archive();
+    get_header(); ?>
+
+                <section id="main">
+
+                    <?php $template_archive = new Template_Archive(); ?>
+
+                </section><!-- / # main -->
+
+    <?php get_footer();

@@ -60,4 +60,12 @@
 
     }
 
-    $template_taxonomy = new Template_Taxonomy();
+    get_header(); ?>
+
+                <section id="main">
+
+                    <?php $template_taxonomy = new Template_Taxonomy(); ?>
+
+                </section><!-- / # main -->
+
+    <?php get_footer();

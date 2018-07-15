@@ -60,4 +60,12 @@
 
     }
 
-    $template_front_page = new Template_Front_Page();
+    get_header(); ?>
+
+                <section id="main">
+
+                    <?php $template_front_page = new Template_Front_Page(); ?>
+
+                </section><!-- / # main -->
+
+    <?php get_footer();

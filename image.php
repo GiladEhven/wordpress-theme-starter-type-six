@@ -60,4 +60,12 @@
 
     }
 
-    $template_image = new Template_Image();
+    get_header(); ?>
+
+                <section id="main">
+
+                    <?php $template_image = new Template_Image(); ?>
+
+                </section><!-- / # main -->
+
+    <?php get_footer();

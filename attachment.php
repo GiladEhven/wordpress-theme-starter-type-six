@@ -60,4 +60,12 @@
 
     }
 
-    $template_attachment = new Template_Attachment();
+    get_header(); ?>
+
+                <section id="main">
+
+                    <?php $template_attachment = new Template_Attachment(); ?>
+
+                </section><!-- / # main -->
+
+    <?php get_footer();

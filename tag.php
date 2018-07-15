@@ -60,4 +60,12 @@
 
     }
 
-    $template_tag = new Template_Tag();
+    get_header(); ?>
+
+                <section id="main">
+
+                    <?php $template_tag = new Template_Tag(); ?>
+
+                </section><!-- / # main -->
+
+    <?php get_footer();

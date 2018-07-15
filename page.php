@@ -60,10 +60,26 @@
 
     }
 
-    $template_page = new Template_Page();
+    get_header(); ?>
 
-    if ( comments_open() || get_comments_number() ) {
+                <section id="main">
 
-        comments_template();
+                    <?php
 
-    }
+                        $template_page = new Template_Page();
+
+                    ?>
+
+                </section><!-- / # main -->
+
+                <?php
+
+                    if ( comments_open() || get_comments_number() ) {
+
+                        comments_template();
+
+                    }
+
+                ?>
+
+    <?php get_footer();

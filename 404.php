@@ -60,4 +60,12 @@
 
     }
 
-    $template_404 = new Template_404();
+    get_header(); ?>
+
+                <section id="main">
+
+                    <?php $template_404 = new Template_404(); ?>
+
+                </section><!-- / # main -->
+
+    <?php get_footer();
