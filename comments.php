@@ -60,4 +60,22 @@
 
     }
 
-    $template_comment = new Template_Comment();
+    if ( post_password_required() ) return;
+
+    ?>
+
+                <section id="comments"><?php
+
+                    if ( have_comments() ) {
+
+                        $template_comment = new Template_Comment();
+
+                    } else {
+
+                        //
+
+                    }
+
+                    comment_form(); ?>
+
+                </section>
