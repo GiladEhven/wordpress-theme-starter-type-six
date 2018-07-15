@@ -8,8 +8,6 @@
 
         class Theme_Core {
 
-            private $text_domain;
-
             private $theme_name;
 
             private $theme_version;

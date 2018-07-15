@@ -10,8 +10,6 @@
 
             private $requested_resource;
 
-            private $text_domain;
-
             public static $object_counter = 0;
 
             public function __construct() {
