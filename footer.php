@@ -62,4 +62,20 @@
 
     }
 
-    $template_footer = new Template_Footer();
+	    ?>
+
+			</main>
+
+			<footer>
+
+			    <?php $template_footer = new Template_Footer(); ?>
+
+			</footer>
+
+		</div>
+
+		<?php wp_footer(); ?>
+
+	</body>
+
+</html>

@@ -6,6 +6,28 @@
 
 	class View_Footer { public function __construct( $data ) {
 
+	/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+	 *                                                                                       *
+	 *    This file is for FOOTER MAIN DESIGN ONLY! No chrome!                               *
+	 *                                                                                       *
+	 *    In [footer.php]:             </main>                                               *
+	 *                                                                                       *
+	 *                                 <footer>                                              *
+	 *                                                                                       *
+	 *    In this file:                    Everything between "DO NOT EDIT" lines            *
+	 *                                                                                       *
+	 *    In [footer.php]:             </footer>                                             *
+	 *                                                                                       *
+	 *                             </div>                                                    *
+	 *                                                                                       *
+	 *                             <?php wp_footer(); ?>                                     *
+	 *                                                                                       *
+	 *                         </body>                                                       *
+	 *                                                                                       *
+	 *                     </html>                                                           *
+	 *                                                                                       *
+	 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
 	//  --------------------------  DO NOT EDIT ABOVE THIS LINE  --------------------------  //
 
 			echo '<h1>' . $data['sample-one'] . ' ' . $data['sample-two'] . '</h1>';
