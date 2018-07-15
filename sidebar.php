@@ -60,4 +60,10 @@
 
     }
 
-    $template_sidebar = new Template_Sidebar();
+?>
+
+                <aside>
+
+                    <?php $template_sidebar = new Template_Sidebar(); ?>
+
+                </aside>
