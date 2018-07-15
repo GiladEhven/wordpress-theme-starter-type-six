@@ -2,19 +2,23 @@
 # FILES
 
 .DS_Store
+.htaccess
 
+sitemap.xml
 Thumbs.db
 
 # FILE TYPES
 
 *.diff
 *.err
+*.gz
 *.log
 *.sass-cache
 *.sublime-project
 *.sublime-workspace
 *.syncdb
 *.vi
+*.zip
 
 # FOLDERS
 
