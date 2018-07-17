@@ -4,6 +4,8 @@
 
     if ( ! defined( 'ABSPATH' ) ) exit( 'Nothing to see here. Go <a href="/">home</a>.' );
 
+    if ( ! defined( 'GILAD_TGM_CONTAINER_ID' ) ) define( 'GILAD_TGM_CONTAINER_ID', 'UNSPECIFIED_GTM_CONTAINER_ID' );
+
     if ( ! class_exists( __NAMESPACE__ . 'Theme_Core' ) ) {
 
         class Theme_Core {
@@ -28,8 +30,10 @@
 
                 } else {
 
+                    require_once( get_stylesheet_directory() . '/public/php/class-public-hooks.php' );
                     require_once( get_stylesheet_directory() . '/public/php/class-public-resources.php' );
 
+                    $public_hooks      = new Public_Hooks;
                     $public_resources  = new Public_Resources;
 
                 }

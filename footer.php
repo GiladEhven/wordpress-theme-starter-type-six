@@ -60,19 +60,35 @@
 
     }
 
-	    ?>
+            gilad_main_end(); ?>
 
 			</main>
 
 			<footer>
 
-			    <?php $template_footer = new Template_Footer(); ?>
+			    <?php
+
+                    gilad_footer_begin();
+
+                    $template_footer = new Template_Footer();
+
+                    gilad_footer_end();
+
+                ?>
 
 			</footer>
 
+            <?php gilad_wrapper_end(); ?>
+
 		</div>
 
-		<?php wp_footer(); ?>
+        <?php
+
+            gilad_body_end();
+
+            wp_footer();
+
+        ?>
 
 	</body>
 
