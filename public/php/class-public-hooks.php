@@ -16,47 +16,59 @@
 
                 //  UGLY!
 
-                //  -------------------------------------------  BEGIN AND END  -------------------------------------------  //
+                //  -------------------------------------  BEGIN AND END : TEMPLATES  -------------------------------------  //
 
-                function gilad_body_begin()       { do_action( 'gilad_body_begin' );       }
+                function gilad_body_begin()           { do_action( 'gilad_body_begin' );           }
 
-                function gilad_body_end()         { do_action( 'gilad_body_end' );         }
+                function gilad_body_end()             { do_action( 'gilad_body_end' );             }
 
-                function gilad_footer_begin()     { do_action( 'gilad_footer_begin' );     }
+                function gilad_footer_begin()         { do_action( 'gilad_footer_begin' );         }
 
-                function gilad_footer_end()       { do_action( 'gilad_footer_end' );       }
+                function gilad_footer_end()           { do_action( 'gilad_footer_end' );           }
 
-                function gilad_header_begin()     { do_action( 'gilad_header_begin' );     }
+                function gilad_header_begin()         { do_action( 'gilad_header_begin' );         }
 
-                function gilad_header_end()       { do_action( 'gilad_header_end' );       }
+                function gilad_header_end()           { do_action( 'gilad_header_end' );           }
 
-                function gilad_main_begin()       { do_action( 'gilad_main_begin' );       }
+                function gilad_main_begin()           { do_action( 'gilad_main_begin' );           }
 
-                function gilad_main_end()         { do_action( 'gilad_main_end' );         }
+                function gilad_main_end()             { do_action( 'gilad_main_end' );             }
 
-                function gilad_wrapper_begin()    { do_action( 'gilad_wrapper_begin' );    }
+                function gilad_wrapper_begin()        { do_action( 'gilad_wrapper_begin' );        }
 
-                function gilad_wrapper_end()      { do_action( 'gilad_wrapper_end' );      }
+                function gilad_wrapper_end()          { do_action( 'gilad_wrapper_end' );          }
+
+                //  -----------------------------------  BEGIN AND END : DEFAULT LOOPS  -----------------------------------  //
+
+                function gilad_else_posts_begin()     { do_action( 'gilad_else_posts_begin' );     }
+
+                function gilad_else_posts_end()       { do_action( 'gilad_else_posts_end' );       }
+
+                function gilad_if_posts_begin()       { do_action( 'gilad_if_posts_begin' );       }
+
+                function gilad_if_posts_end()         { do_action( 'gilad_if_posts_end' );         }
+
+                function gilad_while_posts_begin()    { do_action( 'gilad_while_posts_begin' );    }
+
+                function gilad_while_posts_end()      { do_action( 'gilad_while_posts_end' );      }
 
                 //  ------------------------------------------  BEFORE AND AFTER  -----------------------------------------  //
 
-                function gilad_gtm_after()        { do_action( 'gilad_gtm_after' );        }
+                function gilad_gtm_after()            { do_action( 'gilad_gtm_after' );            }
 
-                function gilad_gtm_before()       { do_action( 'gilad_gtm_before' );       }
+                function gilad_gtm_before()           { do_action( 'gilad_gtm_before' );           }
 
                 //  --------------------------------------------  ADD ANOTHER  --------------------------------------------  //
 
-                function gilad_link_add()         { do_action( 'gilad_link_add' );         }
+                function gilad_link_add()             { do_action( 'gilad_link_add' );             }
 
-                function gilad_meta_add()         { do_action( 'gilad_meta_add' );         }
+                function gilad_meta_add()             { do_action( 'gilad_meta_add' );             }
 
                 //  -------------------------------------------------------------------------------------------------------  //
 
                 self::$object_counter++;
 
             }
-
-            //
 
         }
 
