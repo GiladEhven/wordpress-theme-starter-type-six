@@ -24,10 +24,12 @@
                     require_once( get_stylesheet_directory() . '/admin/php/integrations/class-acf-options-pages.php' );
                     require_once( get_stylesheet_directory() . '/admin/php/loaders/class-admin-resources.php' );
                     require_once( get_stylesheet_directory() . '/admin/php/class-clean-admin.php' );
+                    require_once( get_stylesheet_directory() . '/admin/php/class-clean-media.php' );
 
                     $acf_options_pages = new Acf_Options_Pages;
                     $admin_resources   = new Admin_Resources;
                     $clean_admin       = new Clean_Admin;
+                    $clean_media       = new Clean_Media;
 
                 } else {
 
