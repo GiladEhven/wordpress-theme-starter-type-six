@@ -5,6 +5,7 @@
     if ( ! defined( 'ABSPATH' ) ) exit( 'Nothing to see here. Go <a href="/">home</a>.' );
 
     if ( ! defined( 'GILAD_TGM_CONTAINER_ID' ) ) define( 'GILAD_TGM_CONTAINER_ID', 'UNSPECIFIED_GTM_CONTAINER_ID' );
+    if ( ! defined( 'GILAD_WEBSITE_PHASE' ) )    define( 'GILAD_WEBSITE_PHASE',    'dev' );
 
     if ( ! class_exists( __NAMESPACE__ . 'Theme_Core' ) ) {
 

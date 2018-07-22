@@ -27,6 +27,16 @@
 
             }
 
+            //  -------------------------  GETTERS AND SETTERS  -------------------------  //
+
+            protected function set_theme_descriptors() {
+                $theme_object = wp_get_theme();
+                $this->text_domain = $theme_object->get( 'TextDomain' );
+                $this->theme_version = $theme_object->get( 'Version' );
+            }
+
+            //  ----------------------------  MISSION LOGIC  ----------------------------  //
+
             private function dequeue_css() {
 
             }
@@ -37,7 +47,11 @@
 
             private function enqueue_css() {
                 add_action( 'wp_enqueue_scripts', function() {
-                    wp_enqueue_style( $this->text_domain, get_stylesheet_directory_uri() . '/public/css/main.css', array(), $this->theme_version, 'all' );
+                    wp_enqueue_style( $this->text_domain . '-1', get_stylesheet_directory_uri() . '/public/css/main.css', array(), $this->theme_version, 'all' );
+
+                    if ( GILAD_WEBSITE_PHASE == 'dev' ) {
+                    wp_enqueue_style( $this->text_domain . '-2', get_stylesheet_directory_uri() . '/public/css/dev.css', array(), $this->theme_version, 'all' );
+                    }
                 });
             }
 
@@ -45,12 +59,6 @@
                 add_action( 'wp_enqueue_scripts', function() {
                     wp_enqueue_script( $this->text_domain, get_stylesheet_directory_uri() . '/public/js/main.js', array( 'jquery' ), $this->theme_version, true );
                 });
-            }
-
-            protected function set_theme_descriptors() {
-                $theme_object = wp_get_theme();
-                $this->text_domain = $theme_object->get( 'TextDomain' );
-                $this->theme_version = $theme_object->get( 'Version' );
             }
 
         }
