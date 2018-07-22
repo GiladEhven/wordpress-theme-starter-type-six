@@ -20,8 +20,8 @@
 
                 if ( is_admin() ) {
 
-                    require_once( get_stylesheet_directory() . '/admin/php/class-acf-options-pages.php' );
-                    require_once( get_stylesheet_directory() . '/admin/php/class-admin-resources.php' );
+                    require_once( get_stylesheet_directory() . '/admin/php/integrations/class-acf-options-pages.php' );
+                    require_once( get_stylesheet_directory() . '/admin/php/loaders/class-admin-resources.php' );
                     require_once( get_stylesheet_directory() . '/admin/php/class-clean-admin.php' );
 
                     $acf_options_pages = new Acf_Options_Pages;
@@ -31,7 +31,7 @@
                 } else {
 
                     require_once( get_stylesheet_directory() . '/public/php/class-public-hooks.php' );
-                    require_once( get_stylesheet_directory() . '/public/php/class-public-resources.php' );
+                    require_once( get_stylesheet_directory() . '/public/php/loaders/class-public-resources.php' );
 
                     $public_hooks      = new Public_Hooks;
                     $public_resources  = new Public_Resources;
