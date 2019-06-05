@@ -4,66 +4,10 @@
 
     if ( ! defined( 'ABSPATH' ) ) exit( 'Nothing to see here. Go <a href="/">home</a>.' );
 
-    if ( ! class_exists( __NAMESPACE__ . 'Template_Sidebar' ) ) {
-
-        class Template_Sidebar {
-
-            private $requested_resource;
-
-            public static $object_counter = 0;
-
-            public function __construct() {
-
-                if ( is_admin() ) {
-
-                	//
-
-                } else {
-
-                	$data = $this->get_acf_data();
-
-                }
-
-                self::$object_counter++;
-
-                $this->set_requested_resource();
-
-                require_once( get_stylesheet_directory() . '/public/php/views/class-view-sidebar.php' );
-                $view_sidebar = new View_Sidebar( $data );
-
-            }
-
-            //  -------------------------  GETTERS AND SETTERS  -------------------------  //
-
-            public function get_requested_resource() {
-                return $this->requested_resource;
-            }
-
-            protected function set_requested_resource() {
-                $this->requested_resource = 'undetermined';
-            }
-
-            //  ----------------------------  MISSION LOGIC  ----------------------------  //
-
-            protected function get_acf_data() {
-
-                	$data = array();
-
-                	$data['sample-one'] = 'This is a';
-                	$data['sample-two'] = 'SIDEBAR type...';
-
-                	return $data;
-
-            }
-
-        }
-
-    }
-
 ?>
 
                 <aside>
 
-                    <?php $template_sidebar = new Template_Sidebar(); ?>
+                    <?php // $template_sidebar = new Template_Sidebar(); ?>
 
                 </aside>
