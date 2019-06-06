@@ -11,7 +11,7 @@
 
 		<?php
 
-			gilad_hook_google_head_before();
+			h_google_head_before();
 
 			if ( GILAD_GOOGLE_TYPE == 'GA' ) {
 
@@ -27,7 +27,7 @@
 
 			}
 
-			gilad_hook_google_head_after();
+			h_google_head_after();
 
 		?>
 
@@ -35,11 +35,11 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="description" content="<?php bloginfo( 'description' ); ?>" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<?php gilad_hook_metatags_add(); ?>
+		<?php h_metatags_add(); ?>
 
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 		<link rel="profile" href="http://gmpg.org/xfn/11" />
-		<?php gilad_hook_linktags_add(); ?>
+		<?php h_linktags_add(); ?>
 
 		<?php wp_head(); ?>
 
@@ -49,7 +49,7 @@
 
 		<?php
 
-			gilad_hook_google_body_before();
+			h_google_body_before();
 
 			if ( GILAD_GOOGLE_TYPE == 'GA' ) {
 
@@ -65,21 +65,21 @@
 
 			}
 
-			gilad_hook_google_body_after();
+			h_google_body_after();
 
 		?>
 
-		<?php gilad_hook_body_begin(); ?>
+		<?php h_body_begin(); ?>
 
 		<div id="body-liner">
 
-			<?php gilad_hook_body_liner_begin(); ?>
+			<?php h_body_liner_begin(); ?>
 
 			<header id="body-header">
 
 				<?php
 
-					gilad_hook_body_header();
+					h_body_header();
 
 				?>
 
@@ -89,4 +89,4 @@
 
 				<?php
 
-					gilad_hook_main_begin();
+					h_main_begin();

@@ -4,12 +4,20 @@
 
     if ( ! defined( 'ABSPATH' ) ) exit( 'Nothing to see here. Go <a href="/">home</a>.' );
 
-    get_header(); ?>
+    get_header();
 
-                <section id="main">
+    	h_template_date_before();
 
-                    <?php // $template_date = new Template_Date(); ?>
+    		?>
 
-                </section><!-- / # main -->
+                <div id="h-template-date">
 
-    <?php get_footer();
+                    <?php h_template_date(); ?>
+
+                </div>
+
+		    <?php
+
+		h_template_date_after();
+
+    get_footer();

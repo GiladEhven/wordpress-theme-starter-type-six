@@ -4,12 +4,20 @@
 
     if ( ! defined( 'ABSPATH' ) ) exit( 'Nothing to see here. Go <a href="/">home</a>.' );
 
-    get_header(); ?>
+    get_header();
 
-                <section id="main">
+    	h_template_image_before();
 
-                    <?php // $template_image = new Template_Image(); ?>
+    		?>
 
-                </section><!-- / # main -->
+                <div id="h-template-image">
 
-    <?php get_footer();
+                    <?php h_template_image(); ?>
+
+                </div>
+
+		    <?php
+
+		h_template_image_after();
+
+    get_footer();

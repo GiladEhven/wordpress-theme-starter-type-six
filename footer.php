@@ -4,7 +4,7 @@
 
     if ( ! defined( 'ABSPATH' ) ) exit( 'Nothing to see here. Go <a href="/">home</a>.' );
 
-                    gilad_hook_main_end();
+                    h_main_end();
 
                 ?>
 
@@ -14,19 +14,19 @@
 
                 <?php
 
-                    gilad_hook_body_footer();
+                    h_body_footer();
 
                 ?>
 
 			</footer>
 
-            <?php gilad_hook_body_liner_end(); ?>
+            <?php h_body_liner_end(); ?>
 
 		</div>
 
         <?php
 
-            gilad_hook_body_end();
+            h_body_end();
 
             wp_footer();
 

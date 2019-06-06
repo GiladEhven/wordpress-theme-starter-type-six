@@ -4,12 +4,20 @@
 
     if ( ! defined( 'ABSPATH' ) ) exit( 'Nothing to see here. Go <a href="/">home</a>.' );
 
-    get_header(); ?>
+    get_header();
 
-                <section id="main">
+    	h_template_404_before();
 
-                    <?php // $template_404 = new Template_404(); ?>
+    		?>
 
-                </section><!-- / # main -->
+                <div id="h-template-404">
 
-    <?php get_footer();
+                    <?php h_template_404(); ?>
+
+                </div>
+
+		    <?php
+
+		h_template_404_after();
+
+    get_footer();

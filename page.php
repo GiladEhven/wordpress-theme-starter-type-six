@@ -4,26 +4,30 @@
 
     if ( ! defined( 'ABSPATH' ) ) exit( 'Nothing to see here. Go <a href="/">home</a>.' );
 
-    get_header(); ?>
+    get_header();
 
-                <section id="main">
+        h_template_page_before();
+
+            ?>
+
+                <div id="h-template-page">
 
                     <?php
 
-                        // $template_page = new Template_Page();
+                        h_template_page();
+
+                        if ( comments_open() || get_comments_number() ) {
+
+                            comments_template();
+
+                        }
 
                     ?>
 
-                </section><!-- / # main -->
+                </div>
 
-                <?php
+            <?php
 
-                    if ( comments_open() || get_comments_number() ) {
+        h_template_page_after();
 
-                        comments_template();
-
-                    }
-
-                ?>
-
-    <?php get_footer();
+    get_footer();

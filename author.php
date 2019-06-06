@@ -4,12 +4,20 @@
 
     if ( ! defined( 'ABSPATH' ) ) exit( 'Nothing to see here. Go <a href="/">home</a>.' );
 
-    get_header(); ?>
+    get_header();
 
-                <section id="main">
+    	h_template_author_before();
 
-                    <?php // $template_author = new Template_Author(); ?>
+    		?>
 
-                </section><!-- / # main -->
+                <div id="h-template-author">
 
-    <?php get_footer();
+                    <?php h_template_author(); ?>
+
+                </div>
+
+		    <?php
+
+		h_template_author_after();
+
+    get_footer();
