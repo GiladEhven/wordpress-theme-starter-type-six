@@ -1,28 +1,23 @@
 
-# FILES
-
-.DS_Store
-.htaccess
-
-sitemap.xml
-Thumbs.db
-
-# FILE TYPES
+# WORKSTATION
 
 *.diff
 *.err
-*.gz
-*.log
 *.sass-cache
+*.sql
 *.sublime-project
 *.sublime-workspace
 *.syncdb
 *.vi
 *.zip
 
-# FOLDERS
+.DS_Store
 
-.svn
+Thumbs.db
 
-vendor
-wp-content
+# PROJECT
+
+*.gz
+*.log
+
+sitemap.xml
