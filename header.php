@@ -9,31 +9,37 @@
 
 	<head>
 
-		<?php gilad_gtm_before(); ?>
+		<?php
 
-		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-		})(window,document,'script','dataLayer','<?php echo GILAD_TGM_CONTAINER_ID; ?>');</script>
+			gilad_hook_google_head_before();
 
-		<?php gilad_gtm_after(); ?>
+			if ( GILAD_GOOGLE_TYPE == 'GA' ) {
+
+				echo '<!--  TODO: POUR GA MAIN SNIPPET HERE  -->';
+
+			} elseif ( GILAD_GOOGLE_TYPE == 'GTM' ) {
+
+				echo '<!--  TODO: POUR GTM MAIN SNIPPET HERE  -->';
+
+			} else {
+
+				echo '<!--  Google Analytics not enabled. Google Tag Manager not enabled.  -->';
+
+			}
+
+			gilad_hook_google_head_after();
+
+		?>
 
 		<meta charset="<?php bloginfo( 'charset' ); ?>" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="description" content="<?php bloginfo( 'description' ); ?>" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<?php gilad_meta_add(); ?>
-
-		<title><?php
-			bloginfo( 'name' );
-			echo ' | ';
-			is_front_page() ? bloginfo( 'description' ) : wp_title( '' );
-		?></title>
+		<?php gilad_hook_metatags_add(); ?>
 
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 		<link rel="profile" href="http://gmpg.org/xfn/11" />
-		<?php gilad_link_add(); ?>
+		<?php gilad_hook_linktags_add(); ?>
 
 		<?php wp_head(); ?>
 
@@ -41,30 +47,46 @@
 
 	<body <?php body_class(); ?>>
 
-		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=<?php echo GILAD_TGM_CONTAINER_ID; ?>" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+		<?php
 
-		<?php gilad_body_begin(); ?>
+			gilad_hook_google_body_before();
 
-		<div id="body">
+			if ( GILAD_GOOGLE_TYPE == 'GA' ) {
 
-			<?php gilad_wrapper_begin(); ?>
+				echo '<!--  TODO: POUR GA BODY SNIPPET HERE  -->';
 
-			<header>
+			} elseif ( GILAD_GOOGLE_TYPE == 'GTM' ) {
+
+				echo '<!--  TODO: POUR GTM BODY SNIPPET HERE  -->';
+
+			} else {
+
+				echo '<!--  Google Analytics not enabled. Google Tag Manager not enabled.  -->';
+
+			}
+
+			gilad_hook_google_body_after();
+
+		?>
+
+		<?php gilad_hook_body_begin(); ?>
+
+		<div id="body-liner">
+
+			<?php gilad_hook_body_liner_begin(); ?>
+
+			<header id="body-header">
 
 				<?php
 
-					gilad_header_begin();
-
-					// $template_header = new Template_Header();
-
-					gilad_header_end();
+					gilad_hook_body_header();
 
 				?>
 
 			</header>
 
-			<main>
+			<main class="<?php gilad_func_main_tag_classes(); ?>">
 
 				<?php
 
-					gilad_main_begin();
+					gilad_hook_main_begin();
