@@ -14,6 +14,10 @@
 
 
 
+    if ( ! defined( 'GILAD_GOOGLE_TYPE'       ) ) { define( 'GILAD_GOOGLE_TYPE',       'GA' ); }
+
+
+
     if ( is_admin() ) {
 
         require_once( get_stylesheet_directory() . '/functions/admin-cleanup.php' );
@@ -22,7 +26,6 @@
 
         require_once( get_stylesheet_directory() . '/functions/public-action-hooks.php' );
         require_once( get_stylesheet_directory() . '/functions/public-cleanup.php' );
-        require_once( get_stylesheet_directory() . '/functions/public-constants.php' );
 
     }
 
