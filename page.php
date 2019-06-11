@@ -14,7 +14,11 @@
 
                     <?php
 
+                        h_template_page_begin();
+
                         get_template_part( 'parts/loop', get_post_type() );
+
+                        h_template_page_end();
 
                     ?>
 

@@ -12,7 +12,15 @@
 
                 <div id="h-template-index">
 
-                    <?php get_template_part( 'parts/loop', 'index' ); ?>
+                    <?php
+
+                        h_template_index_begin();
+
+                        get_template_part( 'parts/loop', 'index' );
+
+                        h_template_index_end();
+
+                    ?>
 
                 </div>
 
