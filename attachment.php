@@ -12,7 +12,7 @@
 
                 <div id="h-template-attachment">
 
-                    <?php h_template_attachment(); ?>
+                    <?php get_template_part( 'parts/loop', get_post_type() ); ?>
 
                 </div>
 

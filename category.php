@@ -12,7 +12,7 @@
 
                 <div id="h-template-category">
 
-                    <?php h_template_category(); ?>
+                    <?php get_template_part( 'parts/loop', 'category' ); ?>
 
                 </div>
 

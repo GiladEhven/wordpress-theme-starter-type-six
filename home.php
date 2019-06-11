@@ -12,7 +12,7 @@
 
                 <div id="h-template-home">
 
-                    <?php h_template_home(); ?>
+                    <?php get_template_part( 'parts/loop', 'home' ); ?>
 
                 </div>
 

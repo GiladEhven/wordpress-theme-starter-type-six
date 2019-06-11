@@ -12,7 +12,7 @@
 
                 <div id="h-template-taxonomy">
 
-                    <?php h_template_taxonomy(); ?>
+                    <?php get_template_part( 'parts/loop', get_post_type() ); ?>
 
                 </div>
 

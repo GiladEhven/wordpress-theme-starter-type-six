@@ -14,13 +14,7 @@
 
                     <?php
 
-                        h_template_single();
-
-                        if ( comments_open() || get_comments_number() ) {
-
-                            comments_template();
-
-                        }
+                        get_template_part( 'parts/loop', get_post_type() );
 
                     ?>
 

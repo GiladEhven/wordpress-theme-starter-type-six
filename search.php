@@ -12,7 +12,7 @@
 
                 <div id="h-template-search">
 
-                    <?php h_template_search(); ?>
+                    <?php get_template_part( 'parts/loop', 'search' ); ?>
 
                 </div>
 

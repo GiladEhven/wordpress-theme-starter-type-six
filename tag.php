@@ -12,7 +12,7 @@
 
                 <div id="h-template-tag">
 
-                    <?php h_template_tag(); ?>
+                    <?php get_template_part( 'parts/loop', get_post_type() ); ?>
 
                 </div>
 

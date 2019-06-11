@@ -12,7 +12,7 @@
 
                 <div id="h-template-image">
 
-                    <?php h_template_image(); ?>
+                    <?php get_template_part( 'parts/loop', get_post_type() ); ?>
 
                 </div>
 

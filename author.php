@@ -12,7 +12,7 @@
 
                 <div id="h-template-author">
 
-                    <?php h_template_author(); ?>
+                    <?php get_template_part( 'parts/loop', 'author' ); ?>
 
                 </div>
 

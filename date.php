@@ -12,7 +12,7 @@
 
                 <div id="h-template-date">
 
-                    <?php h_template_date(); ?>
+                    <?php get_template_part( 'parts/loop', 'date' ); ?>
 
                 </div>
 

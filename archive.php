@@ -12,7 +12,7 @@
 
                 <div id="h-template-archive">
 
-                    <?php h_template_archive(); ?>
+                    <?php get_template_part( 'parts/loop', get_post_type() ); ?>
 
                 </div>
 
