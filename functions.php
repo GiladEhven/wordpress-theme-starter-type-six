@@ -14,7 +14,8 @@
 
 
 
-    if ( ! defined( 'GILAD_GOOGLE_TYPE'            ) ) { define( 'GILAD_GOOGLE_TYPE',            'GA' );  }
+    if ( ! defined( 'GILAD_GOOGLE_TYPE'            ) ) { define( 'GILAD_GOOGLE_TYPE',            'GAM' );  }
+    if ( ! defined( 'GILAD_GOOGLE_CONTAINER_ID'    ) ) { define( 'GILAD_GOOGLE_CONTAINER_ID',    'REPLACE-WITH-CONTAINER-ID' );  }
 
 
 
