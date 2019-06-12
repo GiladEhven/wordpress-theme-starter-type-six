@@ -6,12 +6,8 @@
 
 
 
-    function h_google_head_before()            { do_action( 'h_google_head_before' );         }
-    function h_google_head_after()             { do_action( 'h_google_head_after' );          }
     function h_metatags_add()                  { do_action( 'h_metatags_add' );               }
     function h_linktags_add()                  { do_action( 'h_linktags_add' );               }
-    function h_google_body_before()            { do_action( 'h_google_body_before' );         }
-    function h_google_body_after()             { do_action( 'h_google_body_after' );          }
     function h_body_begin()                    { do_action( 'h_body_begin' );                 }
     function h_body_liner_begin()              { do_action( 'h_body_liner_begin' );           }
     function h_body_header()                   { do_action( 'h_body_header' );                }

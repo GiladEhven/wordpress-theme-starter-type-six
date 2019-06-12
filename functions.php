@@ -14,11 +14,6 @@
 
 
 
-    if ( ! defined( 'GILAD_GOOGLE_TYPE'            ) ) { define( 'GILAD_GOOGLE_TYPE',            'GAM' );  }
-    if ( ! defined( 'GILAD_GOOGLE_CONTAINER_ID'    ) ) { define( 'GILAD_GOOGLE_CONTAINER_ID',    'REPLACE-WITH-CONTAINER-ID' );  }
-
-
-
     if ( ! defined( 'GILAD_SUPPORT_BEAVER_BUILDER' ) ) { define( 'GILAD_SUPPORT_BEAVER_BUILDER', false ); }
     if ( ! defined( 'GILAD_SUPPORT_CUSTOMIZER'     ) ) { define( 'GILAD_SUPPORT_CUSTOMIZER',     false ); }
     if ( ! defined( 'GILAD_SUPPORT_GIVE_WP'        ) ) { define( 'GILAD_SUPPORT_GIVE_WP',        false ); }
