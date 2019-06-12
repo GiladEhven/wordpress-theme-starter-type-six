@@ -31,6 +31,7 @@
     // Set to 'true':  Loads 'version.php' (latest supported version)
     // Set to '0.0.0': Loads 'version-0.0.0.php' (named version if found or fall back to 'version.php')
     if ( ! defined( 'GILAD_USE_BOOTSTRAP'          ) ) { define( 'GILAD_USE_BOOTSTRAP',          true ); }
+    if ( ! defined( 'GILAD_USE_FONT_AWESOME'       ) ) { define( 'GILAD_USE_FONT_AWESOME',       true ); }
 
 
 
