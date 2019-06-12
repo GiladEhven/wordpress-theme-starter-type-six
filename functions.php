@@ -27,6 +27,13 @@
 
 
 
+    // Set to 'false': Loads nothing (no Bootstrap support)
+    // Set to 'true':  Loads 'version.php' (latest supported version)
+    // Set to '0.0.0': Loads 'version-0.0.0.php' (named version if found or fall back to 'version.php')
+    if ( ! defined( 'GILAD_USE_BOOTSTRAP'          ) ) { define( 'GILAD_USE_BOOTSTRAP',          true ); }
+
+
+
     if ( is_admin() ) {
 
         require_once( get_stylesheet_directory() . '/functions/admin-cleanup.php' );
@@ -42,6 +49,7 @@
 
         require_once( get_stylesheet_directory() . '/functions/public-action-hooks.php' );
         require_once( get_stylesheet_directory() . '/functions/public-cleanup.php' );
+        require_once( get_stylesheet_directory() . '/functions/public-resources.php' );
 
         if ( GILAD_SUPPORT_BEAVER_BUILDER ) require_once( get_stylesheet_directory() . '/support/public-beaver-builder.php' );
         if ( GILAD_SUPPORT_CUSTOMIZER )     require_once( get_stylesheet_directory() . '/support/public-customizer.php' );
