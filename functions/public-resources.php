@@ -40,6 +40,8 @@
 
 	}
 
+	// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - //
+
 	if ( defined( 'GILAD_USE_FONT_AWESOME' ) && GILAD_USE_FONT_AWESOME ) {
 
 		get_template_part( 'support/public-font-awesome/version', GILAD_USE_FONT_AWESOME );
@@ -58,5 +60,27 @@
 	        return $html;
 
 	    }, 10, 2 );
+
+	}
+
+	// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - //
+
+	$css_file_path = get_stylesheet_directory()     . '/assets/style.css';
+	$css_file_uri  = get_stylesheet_directory_uri() . '/assets/style.css';
+	$dependencies  = '';
+
+	if ( defined( 'GILAD_USE_BOOTSTRAP' ) && GILAD_USE_BOOTSTRAP ) {
+
+		$dependencies = 'bootstrap-css';
+
+	}
+
+	if ( file_exists( $css_file_path ) ) {
+
+	    add_action( 'wp_enqueue_scripts', function() use ( $css_file_uri, $dependencies ) {
+
+	        wp_enqueue_style( 'child', $css_file_uri, array( $dependencies ), null, 'all' );
+
+	    } );
 
 	}
