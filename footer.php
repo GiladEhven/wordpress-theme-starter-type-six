@@ -4,19 +4,15 @@
 
     if ( ! defined( 'ABSPATH' ) ) exit( 'Nothing to see here. Go <a href="/">home</a>.' );
 
-                    h_main_end();
 
-                ?>
+
+                h_main_end(); ?>
 
 			</main>
 
 			<footer id="body-footer">
 
-                <?php
-
-                    h_body_footer();
-
-                ?>
+                <?php h_body_footer(); ?>
 
 			</footer>
 
