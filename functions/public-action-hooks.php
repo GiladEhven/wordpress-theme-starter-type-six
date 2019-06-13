@@ -15,18 +15,11 @@
 
 
 
-    function h_template_404_before()           { do_action( 'h_template_404_before' );        }
-    function h_template_404()                  { do_action( 'h_template_404' );               }
-    function h_template_404_after()            { do_action( 'h_template_404_after' );         }
-
     function h_template_before()               { do_action( 'h_template_before' );            }
     function h_template_begin()                { do_action( 'h_template_begin' );             }
+    function h_template_core()                 { do_action( 'h_template_core' );              }
     function h_template_end()                  { do_action( 'h_template_end' );               }
     function h_template_after()                { do_action( 'h_template_after' );             }
-
-    function h_template_front_page_before()    { do_action( 'h_template_front_page_before' ); }
-    function h_template_front_page()           { do_action( 'h_template_front_page' );        }
-    function h_template_front_page_after()     { do_action( 'h_template_front_page_after' );  }
 
 
 

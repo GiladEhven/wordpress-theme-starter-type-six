@@ -6,18 +6,18 @@
 
     get_header();
 
-    	h_template_front_page_before();
+    	h_template_before();
 
     		?>
 
                 <div id="h-template-front-page">
 
-                    <?php h_template_front_page(); ?>
+                    <?php h_template_core(); ?>
 
                 </div>
 
 		    <?php
 
-		h_template_front_page_after();
+		h_template_after();
 
     get_footer();

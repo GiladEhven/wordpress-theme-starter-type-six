@@ -6,18 +6,18 @@
 
     get_header();
 
-    	h_template_404_before();
+    	h_template_before();
 
     		?>
 
                 <div id="h-template-404">
 
-                    <?php h_template_404(); ?>
+                    <?php h_template_core(); ?>
 
                 </div>
 
 		    <?php
 
-		h_template_404_after();
+		h_template_after();
 
     get_footer();
