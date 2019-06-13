@@ -33,26 +33,26 @@
 
     if ( is_admin() ) {
 
-        require_once( get_stylesheet_directory() . '/functions/admin-cleanup.php' );
+        require_once( get_template_directory() . '/functions/admin-cleanup.php' );
 
-        if ( GILAD_SUPPORT_BEAVER_BUILDER ) require_once( get_stylesheet_directory() . '/support/admin-beaver-builder.php' );
-        if ( GILAD_SUPPORT_CUSTOMIZER )     require_once( get_stylesheet_directory() . '/support/admin-customizer.php' );
-        if ( GILAD_SUPPORT_GIVE_WP )        require_once( get_stylesheet_directory() . '/support/admin-give-wp.php' );
-        if ( GILAD_SUPPORT_GUTENBERG )      require_once( get_stylesheet_directory() . '/support/admin-gutenberg.php' );
-        if ( GILAD_SUPPORT_WOOCOMMERCE )    require_once( get_stylesheet_directory() . '/support/admin-woocommerce.php' );
-        if ( GILAD_SUPPORT_WP_FEATURES )    require_once( get_stylesheet_directory() . '/support/admin-wordpress-features.php' );
+        if ( GILAD_SUPPORT_BEAVER_BUILDER ) require_once( get_template_directory() . '/support/admin-beaver-builder.php' );
+        if ( GILAD_SUPPORT_CUSTOMIZER )     require_once( get_template_directory() . '/support/admin-customizer.php' );
+        if ( GILAD_SUPPORT_GIVE_WP )        require_once( get_template_directory() . '/support/admin-give-wp.php' );
+        if ( GILAD_SUPPORT_GUTENBERG )      require_once( get_template_directory() . '/support/admin-gutenberg.php' );
+        if ( GILAD_SUPPORT_WOOCOMMERCE )    require_once( get_template_directory() . '/support/admin-woocommerce.php' );
+        if ( GILAD_SUPPORT_WP_FEATURES )    require_once( get_template_directory() . '/support/admin-wordpress-features.php' );
 
     } else {
 
-        require_once( get_stylesheet_directory() . '/functions/public-action-hooks.php' );
-        require_once( get_stylesheet_directory() . '/functions/public-cleanup.php' );
-        require_once( get_stylesheet_directory() . '/functions/public-resources.php' );
+        require_once( get_template_directory() . '/functions/public-action-hooks.php' );
+        require_once( get_template_directory() . '/functions/public-cleanup.php' );
+        require_once( get_template_directory() . '/functions/public-resources.php' );
 
-        if ( GILAD_SUPPORT_BEAVER_BUILDER ) require_once( get_stylesheet_directory() . '/support/public-beaver-builder.php' );
-        if ( GILAD_SUPPORT_CUSTOMIZER )     require_once( get_stylesheet_directory() . '/support/public-customizer.php' );
-        if ( GILAD_SUPPORT_GIVE_WP )        require_once( get_stylesheet_directory() . '/support/public-give-wp.php' );
-        if ( GILAD_SUPPORT_GUTENBERG )      require_once( get_stylesheet_directory() . '/support/public-gutenberg.php' );
-        if ( GILAD_SUPPORT_WOOCOMMERCE )    require_once( get_stylesheet_directory() . '/support/public-woocommerce.php' );
-        if ( GILAD_SUPPORT_WP_FEATURES )    require_once( get_stylesheet_directory() . '/support/public-wordpress-features.php' );
+        if ( GILAD_SUPPORT_BEAVER_BUILDER ) require_once( get_template_directory() . '/support/public-beaver-builder.php' );
+        if ( GILAD_SUPPORT_CUSTOMIZER )     require_once( get_template_directory() . '/support/public-customizer.php' );
+        if ( GILAD_SUPPORT_GIVE_WP )        require_once( get_template_directory() . '/support/public-give-wp.php' );
+        if ( GILAD_SUPPORT_GUTENBERG )      require_once( get_template_directory() . '/support/public-gutenberg.php' );
+        if ( GILAD_SUPPORT_WOOCOMMERCE )    require_once( get_template_directory() . '/support/public-woocommerce.php' );
+        if ( GILAD_SUPPORT_WP_FEATURES )    require_once( get_template_directory() . '/support/public-wordpress-features.php' );
 
     }
