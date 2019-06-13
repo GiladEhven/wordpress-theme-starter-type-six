@@ -9,17 +9,21 @@
 
 	<head>
 
+		<?php h_head_begin(); ?>
+
 		<meta charset="<?php bloginfo( 'charset' ); ?>" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="description" content="<?php bloginfo( 'description' ); ?>" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<?php h_metatags_add(); ?>
+		<?php h_head_add_meta_tags(); ?>
 
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 		<link rel="profile" href="http://gmpg.org/xfn/11" />
-		<?php h_linktags_add(); ?>
+		<?php h_head_add_link_tags(); ?>
 
 		<?php wp_head(); ?>
+
+		<?php h_head_end(); ?>
 
 	</head>
 
@@ -33,16 +37,10 @@
 
 			<header id="body-header">
 
-				<?php
-
-					h_body_header();
-
-				?>
+				<?php h_body_header(); ?>
 
 			</header>
 
 			<main class="<?php gilad_func_main_tag_classes(); ?>">
 
-				<?php
-
-					h_main_begin();
+				<?php h_main_begin();
