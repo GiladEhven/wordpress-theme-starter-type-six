@@ -41,6 +41,6 @@
 
 			</header>
 
-			<main class="<?php gilad_func_main_tag_classes(); ?>">
+			<main>
 
 				<?php h_main_begin();

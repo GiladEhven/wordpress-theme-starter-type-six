@@ -56,7 +56,3 @@
         if ( GILAD_SUPPORT_WP_FEATURES )    require_once( get_stylesheet_directory() . '/support/public-wordpress-features.php' );
 
     }
-
-    // RENAME AND REPLACE
-
-    function gilad_func_main_tag_classes() {}
