@@ -6,7 +6,7 @@
 
     get_header();
 
-    	h_template_image_before();
+    	h_template_before();
 
     		?>
 
@@ -14,11 +14,11 @@
 
                     <?php
 
-                        h_template_image_begin();
+                        h_template_begin();
 
                         get_template_part( 'parts/loop', get_post_type() );
 
-                        h_template_image_end();
+                        h_template_end();
 
                     ?>
 
@@ -26,6 +26,6 @@
 
 		    <?php
 
-		h_template_image_after();
+		h_template_after();
 
     get_footer();

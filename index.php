@@ -6,7 +6,7 @@
 
     get_header();
 
-    	h_template_index_before();
+    	h_template_before();
 
     		?>
 
@@ -14,11 +14,11 @@
 
                     <?php
 
-                        h_template_index_begin();
+                        h_template_begin();
 
                         get_template_part( 'parts/loop', 'index' );
 
-                        h_template_index_end();
+                        h_template_end();
 
                     ?>
 
@@ -26,6 +26,6 @@
 
 		    <?php
 
-		h_template_index_after();
+		h_template_after();
 
     get_footer();
