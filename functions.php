@@ -47,6 +47,7 @@
         require_once( get_template_directory() . '/functions/public-action-hooks.php' );
         require_once( get_template_directory() . '/functions/public-cleanup.php' );
         require_once( get_template_directory() . '/functions/public-resources.php' );
+        require_once( get_template_directory() . '/functions/public-template-tags.php' );
 
         if ( GILAD_SUPPORT_BEAVER_BUILDER ) require_once( get_template_directory() . '/support/public-beaver-builder.php' );
         if ( GILAD_SUPPORT_CUSTOMIZER )     require_once( get_template_directory() . '/support/public-customizer.php' );
