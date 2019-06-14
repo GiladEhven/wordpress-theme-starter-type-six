@@ -65,21 +65,35 @@
 
 	// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - //
 
-	$css_file_path = get_stylesheet_directory()     . '/assets/style.css';
-	$css_file_uri  = get_stylesheet_directory_uri() . '/assets/style.css';
-	$dependencies  = '';
+	$css_dependencies = '';
+	$css_file_path    = get_stylesheet_directory()     . '/assets/style.css';
+	$css_file_uri     = get_stylesheet_directory_uri() . '/assets/style.css';
+	$js_dependencies  = '';
+	$js_file_path     = get_stylesheet_directory()     . '/assets/script.js';
+	$js_file_uri      = get_stylesheet_directory_uri() . '/assets/script.js';
 
 	if ( defined( 'GILAD_USE_BOOTSTRAP' ) && GILAD_USE_BOOTSTRAP ) {
 
-		$dependencies = 'bootstrap-css';
+		$css_dependencies = 'bootstrap-css';
+		$js_dependencies  = 'bootstrap-js';
+
+	}
+
+	if ( file_exists( $js_file_path ) ) {
+
+	    add_action( 'wp_enqueue_scripts', function() use ( $js_file_uri, $js_dependencies ) {
+
+	        wp_enqueue_script( 'child-script', $js_file_uri, array( $js_dependencies ), null, true );
+
+	    } );
 
 	}
 
 	if ( file_exists( $css_file_path ) ) {
 
-	    add_action( 'wp_enqueue_scripts', function() use ( $css_file_uri, $dependencies ) {
+	    add_action( 'wp_enqueue_scripts', function() use ( $css_file_uri, $css_dependencies ) {
 
-	        wp_enqueue_style( 'child', $css_file_uri, array( $dependencies ), null, 'all' );
+	        wp_enqueue_style( 'child-style', $css_file_uri, array( $css_dependencies ), null, 'all' );
 
 	    } );
 
