@@ -12,7 +12,15 @@
 
                 <div id="h-template-404">
 
-                    <?php h_template_core(); ?>
+                    <?php
+
+                        h_template_begin();
+
+                        get_template_part( 'parts/static', '404' );
+
+                        h_template_end();
+
+                    ?>
 
                 </div>
 
