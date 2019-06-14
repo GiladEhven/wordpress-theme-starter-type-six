@@ -19,7 +19,7 @@
     if ( ! defined( 'GILAD_SUPPORT_GIVE_WP'        ) ) { define( 'GILAD_SUPPORT_GIVE_WP',        false ); }
     if ( ! defined( 'GILAD_SUPPORT_GUTENBERG'      ) ) { define( 'GILAD_SUPPORT_GUTENBERG',      false ); }
     if ( ! defined( 'GILAD_SUPPORT_WOOCOMMERCE'    ) ) { define( 'GILAD_SUPPORT_WOOCOMMERCE',    false ); }
-    if ( ! defined( 'GILAD_SUPPORT_WP_FEATURES'    ) ) { define( 'GILAD_SUPPORT_WP_FEATURES',    false ); }
+    if ( ! defined( 'GILAD_SUPPORT_WP_FEATURES'    ) ) { define( 'GILAD_SUPPORT_WP_FEATURES',    true ); }
 
 
 
