@@ -16,7 +16,7 @@
 
                         h_template_begin();
 
-                        get_template_part( 'parts/loop', get_post_type() );
+                        get_template_part( 'parts/loop', 'archive' );
 
                         h_template_end();
 
