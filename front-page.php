@@ -10,7 +10,7 @@
 
     		?>
 
-                <div id="h-template-front-page">
+                <div class="<?php echo TYPESIX_CSS_CLASSES_FOR_H_TEMPLATE; ?>" id="h-template-front-page">
 
                     <?php h_template_core(); ?>
 

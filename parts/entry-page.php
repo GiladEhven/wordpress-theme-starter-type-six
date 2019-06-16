@@ -5,9 +5,9 @@
     if ( ! defined( 'ABSPATH' ) ) exit( 'Nothing to see here. Go <a href="/">home</a>.' );
 
 ?>
-<article id="page-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article id="page-<?php the_ID(); ?>" <?php post_class( TYPESIX_CSS_CLASSES_FOR_ENTRY_ARTICLE ); ?>>
 
-	<header class="entry-header">
+	<header class="<?php echo TYPESIX_CSS_CLASSES_FOR_ENTRY_ARTICLE_HEADER; ?>">
 
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 
@@ -15,7 +15,7 @@
 
 	<?php t_post_thumbnail(); ?>
 
-	<div class="entry-content">
+	<section class="<?php echo TYPESIX_CSS_CLASSES_FOR_ENTRY_ARTICLE_SECTION; ?>">
 
 		<?php
 
@@ -28,11 +28,11 @@
 
 		?>
 
-	</div>
+	</section>
 
 	<?php if ( get_edit_post_link() ) { ?>
 
-		<footer class="entry-footer">
+		<footer class="<?php echo TYPESIX_CSS_CLASSES_FOR_ENTRY_ARTICLE_FOOTER; ?>">
 
 			<?php
 

@@ -27,20 +27,20 @@
 
 	</head>
 
-	<body <?php body_class(); ?>>
+	<body <?php body_class( TYPESIX_CSS_CLASSES_FOR_BODY ); ?>>
 
 		<?php h_body_begin(); ?>
 
-		<div id="body-liner">
+		<div class="<?php echo TYPESIX_CSS_CLASSES_FOR_BODY_LINER; ?>" id="body-liner">
 
 			<?php h_body_liner_begin(); ?>
 
-			<header id="body-header">
+			<header class="<?php echo TYPESIX_CSS_CLASSES_FOR_BODY_HEADER; ?>" id="body-header">
 
 				<?php h_body_header(); ?>
 
 			</header>
 
-			<main>
+			<main class="<?php echo TYPESIX_CSS_CLASSES_FOR_MAIN; ?>">
 
 				<?php h_main_begin();
