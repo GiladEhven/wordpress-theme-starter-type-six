@@ -42,7 +42,7 @@
 
 	// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - //
 
-	if ( defined( 'ENABLE_PALETTE' ) && ENABLE_PALETTE ) {
+	if ( defined( 'TYPESIX_ENABLE_PALETTE' ) && TYPESIX_ENABLE_PALETTE ) {
 
 		$css_dependencies = '';
 		$palette_file     = '';
@@ -53,9 +53,9 @@
 
 		}
 
-		if ( file_exists( get_template_directory() . '/palettes/' . ENABLE_PALETTE . '.css' ) ) {
+		if ( file_exists( get_template_directory() . '/palettes/' . TYPESIX_ENABLE_PALETTE . '.css' ) ) {
 
-			$palette_file = get_template_directory_uri() . '/palettes/' . ENABLE_PALETTE . '.css';
+			$palette_file = get_template_directory_uri() . '/palettes/' . TYPESIX_ENABLE_PALETTE . '.css';
 
 		} else {
 

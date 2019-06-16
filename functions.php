@@ -32,7 +32,7 @@
 
 
 
-    if ( ! defined( 'ENABLE_PALETTE'                                ) ) { define( 'ENABLE_PALETTE',                                false ); }
+    if ( ! defined( 'TYPESIX_ENABLE_PALETTE'                                ) ) { define( 'TYPESIX_ENABLE_PALETTE',                                false ); }
 
 
 
