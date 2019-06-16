@@ -6,19 +6,15 @@
 
 
 
-                h_main_end(); ?>
+            h_main_end(); ?>
 
-			</main>
+		</main>
 
-			<footer class="<?php echo TYPESIX_CSS_CLASSES_FOR_BODY_FOOTER; ?>" id="body-footer">
+		<footer class="<?php echo TYPESIX_CSS_CLASSES_FOR_BODY_FOOTER; ?>" id="body-footer">
 
-                <?php h_body_footer(); ?>
+            <?php h_body_footer(); ?>
 
-			</footer>
-
-            <?php h_body_liner_end(); ?>
-
-		</div>
+		</footer>
 
         <?php
 

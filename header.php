@@ -31,16 +31,12 @@
 
 		<?php h_body_begin(); ?>
 
-		<div class="<?php echo TYPESIX_CSS_CLASSES_FOR_BODY_LINER; ?>" id="body-liner">
+		<header class="<?php echo TYPESIX_CSS_CLASSES_FOR_BODY_HEADER; ?>" id="body-header">
 
-			<?php h_body_liner_begin(); ?>
+			<?php h_body_header(); ?>
 
-			<header class="<?php echo TYPESIX_CSS_CLASSES_FOR_BODY_HEADER; ?>" id="body-header">
+		</header>
 
-				<?php h_body_header(); ?>
+		<main class="<?php echo TYPESIX_CSS_CLASSES_FOR_MAIN; ?>">
 
-			</header>
-
-			<main class="<?php echo TYPESIX_CSS_CLASSES_FOR_MAIN; ?>">
-
-				<?php h_main_begin();
+			<?php h_main_begin();
