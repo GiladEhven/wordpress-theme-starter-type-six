@@ -9,6 +9,9 @@
     $wp_user_object = get_userdata( get_current_user_id() );
     $user_nicename  = $wp_user_object->user_nicename;
 
+    $req = get_option( 'require_name_email' );
+
+
 
     if ( ! defined( 'TYPESIX_CSS_CLASSES_FOR_BODY'                  ) ) { define( 'TYPESIX_CSS_CLASSES_FOR_BODY',                  'default' );  }
     if ( ! defined( 'TYPESIX_CSS_CLASSES_FOR_BODY_LINER'            ) ) { define( 'TYPESIX_CSS_CLASSES_FOR_BODY_LINER',            'default' );  }
