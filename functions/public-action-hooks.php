@@ -16,11 +16,8 @@
     function h_main_before()                    { do_action( 'h_main_before' );                    }
     function h_main_begin()                     { do_action( 'h_main_begin' );                     }
 
-    function h_template_before()                { do_action( 'h_template_before' );                }
     function h_get_template_part_before()       { do_action( 'h_get_template_part_before' );       }
-    function h_template_core()                  { do_action( 'h_template_core' );                  }
     function h_get_template_part_after()        { do_action( 'h_get_template_part_after' );        }
-    function h_template_after()                 { do_action( 'h_template_after' );                 }
 
     function h_loop_if_begin()                  { do_action( 'h_loop_if_begin' );                  }
     function h_loop_while_begin()               { do_action( 'h_loop_while_begin' );               }

@@ -6,26 +6,10 @@
 
     get_header();
 
-    	h_template_before();
+        h_get_template_part_before();
 
-    		?>
+            get_template_part( 'parts/static', '404' );
 
-                <div class="<?php echo TYPESIX_CSS_CLASSES_FOR_H_TEMPLATE; ?>" id="h-template-404">
-
-                    <?php
-
-                        h_get_template_part_before();
-
-                        get_template_part( 'parts/static', '404' );
-
-                        h_get_template_part_after();
-
-                    ?>
-
-                </div>
-
-		    <?php
-
-		h_template_after();
+        h_get_template_part_after();
 
     get_footer();
