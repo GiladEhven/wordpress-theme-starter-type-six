@@ -10,6 +10,8 @@
 
 		</main>
 
+        <?php h_main_after(); ?>
+
 		<footer class="<?php echo TYPESIX_CSS_CLASSES_FOR_BODY_FOOTER; ?>" id="body-footer">
 
             <?php h_body_footer(); ?>

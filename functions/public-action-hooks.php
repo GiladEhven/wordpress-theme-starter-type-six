@@ -13,6 +13,7 @@
 
     function h_body_begin()                     { do_action( 'h_body_begin' );                     }
     function h_body_header()                    { do_action( 'h_body_header' );                    }
+    function h_main_before()                    { do_action( 'h_main_before' );                    }
     function h_main_begin()                     { do_action( 'h_main_begin' );                     }
 
     function h_template_before()                { do_action( 'h_template_before' );                }
@@ -34,5 +35,6 @@
     function h_loop_else_core()                 { do_action( 'h_loop_else_core' );                 }
 
     function h_main_end()                       { do_action( 'h_main_end' );                       }
+    function h_main_after()                     { do_action( 'h_main_after' );                     }
     function h_body_footer()                    { do_action( 'h_body_footer' );                    }
     function h_body_end()                       { do_action( 'h_body_end' );                       }
