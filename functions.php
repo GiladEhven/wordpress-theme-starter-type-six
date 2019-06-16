@@ -27,6 +27,10 @@
 
 
 
+    if ( ! defined( 'ENABLE_PALETTE'                                ) ) { define( 'ENABLE_PALETTE',                                false ); }
+
+
+
     if ( ! defined( 'TYPESIX_SUPPORT_BEAVER_BUILDER'                ) ) { define( 'TYPESIX_SUPPORT_BEAVER_BUILDER',                false ); }
     if ( ! defined( 'TYPESIX_SUPPORT_CUSTOMIZER'                    ) ) { define( 'TYPESIX_SUPPORT_CUSTOMIZER',                    false ); }
     if ( ! defined( 'TYPESIX_SUPPORT_GIVE_WP'                       ) ) { define( 'TYPESIX_SUPPORT_GIVE_WP',                       false ); }

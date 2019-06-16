@@ -42,6 +42,37 @@
 
 	// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - //
 
+	if ( defined( 'ENABLE_PALETTE' ) && ENABLE_PALETTE ) {
+
+		$css_dependencies = '';
+		$palette_file     = '';
+
+		if ( defined( 'TYPESIX_USE_BOOTSTRAP' ) && TYPESIX_USE_BOOTSTRAP ) {
+
+			$css_dependencies = 'bootstrap-css';
+
+		}
+
+		if ( file_exists( get_template_directory() . '/palettes/' . ENABLE_PALETTE . '.css' ) ) {
+
+			$palette_file = get_template_directory_uri() . '/palettes/' . ENABLE_PALETTE . '.css';
+
+		} else {
+
+			$palette_file = get_template_directory_uri() . '/palettes/gray.css';
+
+		}
+
+	    add_action( 'wp_enqueue_scripts', function() use ( $css_dependencies, $palette_file ) {
+
+	        wp_enqueue_style( 'palette', $palette_file, array( $css_dependencies ), null, 'all' );
+
+	    } );
+
+	}
+
+	// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - //
+
 	if ( defined( 'TYPESIX_USE_FONT_AWESOME' ) && TYPESIX_USE_FONT_AWESOME ) {
 
 		get_template_part( 'support/public-font-awesome/version', TYPESIX_USE_FONT_AWESOME );
