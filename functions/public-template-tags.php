@@ -16,16 +16,16 @@
 
 		if ( 'post' === get_post_type() ) {
 
-			$categories_list = get_the_category_list( esc_html__( ', ', '_s' ) );
+			$categories_list = get_the_category_list( esc_html__( ', ', 'wordpress-theme-starter-type-six' ) );
 
 			if ( $categories_list ) {
-				printf( '<span class="cat-links">' . esc_html__( 'Posted in %1$s', '_s' ) . '</span>', $categories_list ); // WPCS: XSS OK.
+				printf( '<span class="cat-links">' . esc_html__( 'Posted in %1$s', 'wordpress-theme-starter-type-six' ) . '</span>', $categories_list ); // WPCS: XSS OK.
 			}
 
-			$tags_list = get_the_tag_list( '', esc_html_x( ', ', 'list item separator', '_s' ) );
+			$tags_list = get_the_tag_list( '', esc_html_x( ', ', 'list item separator', 'wordpress-theme-starter-type-six' ) );
 
 			if ( $tags_list ) {
-				printf( '<span class="tags-links">' . esc_html__( 'Tagged %1$s', '_s' ) . '</span>', $tags_list ); // WPCS: XSS OK.
+				printf( '<span class="tags-links">' . esc_html__( 'Tagged %1$s', 'wordpress-theme-starter-type-six' ) . '</span>', $tags_list ); // WPCS: XSS OK.
 			}
 
 		}
@@ -36,7 +36,7 @@
 			comments_popup_link(
 				sprintf(
 					wp_kses(
-						__( 'Leave a Comment<span class="screen-reader-text"> on %s</span>', '_s' ),
+						__( 'Leave a Comment<span class="screen-reader-text"> on %s</span>', 'wordpress-theme-starter-type-six' ),
 						array(
 							'span' => array(
 								'class' => array(),
@@ -53,7 +53,7 @@
 		edit_post_link(
 			sprintf(
 				wp_kses(
-					__( 'Edit <span class="screen-reader-text">%s</span>', '_s' ),
+					__( 'Edit <span class="screen-reader-text">%s</span>', 'wordpress-theme-starter-type-six' ),
 					array(
 						'span' => array(
 							'class' => array(),
@@ -107,7 +107,7 @@
 	function t_posted_by() {
 
 		$byline = sprintf(
-			esc_html_x( 'by %s', 'post author', '_s' ),
+			esc_html_x( 'by %s', 'post author', 'wordpress-theme-starter-type-six' ),
 			'<span class="author vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span>'
 		);
 
@@ -135,7 +135,7 @@
 		);
 
 		$posted_on = sprintf(
-			esc_html_x( 'Posted on %s', 'post date', '_s' ),
+			esc_html_x( 'Posted on %s', 'post date', 'wordpress-theme-starter-type-six' ),
 			'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
 		);
 
