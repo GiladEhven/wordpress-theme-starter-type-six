@@ -6,5 +6,5 @@
 
 
 
-	define( 'GILAD_FONT_AWESOME_CSS',        'sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1' );
-	define( 'GILAD_FONT_AWESOME_VERSION',    '4.6.3' );
+	define( 'TYPESIX_FONT_AWESOME_CSS',        'sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1' );
+	define( 'TYPESIX_FONT_AWESOME_VERSION',    '4.6.3' );

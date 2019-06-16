@@ -6,7 +6,7 @@
 
 
 
-    if ( GILAD_DISABLE_EMOJI ) {
+    if ( TYPESIX_DISABLE_EMOJI ) {
 
 		add_action( 'init', function() {
 			remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
@@ -17,25 +17,25 @@
 
     }
 
-    if ( GILAD_DISABLE_GENERATOR ) {
+    if ( TYPESIX_DISABLE_GENERATOR ) {
 
     	remove_action( 'wp_head', 'wp_generator' );
 
     }
 
-    if ( GILAD_DISABLE_RSD ) {
+    if ( TYPESIX_DISABLE_RSD ) {
 
     	remove_action( 'wp_head', 'rsd_link' );
 
     }
 
-    if ( GILAD_DISABLE_SHORTLINK ) {
+    if ( TYPESIX_DISABLE_SHORTLINK ) {
 
     	remove_action( 'wp_head', 'wp_shortlink_wp_head' );
 
     }
 
-    if ( GILAD_DISABLE_WLW ) {
+    if ( TYPESIX_DISABLE_WLW ) {
 
     	remove_action( 'wp_head', 'wlwmanifest_link' );
 

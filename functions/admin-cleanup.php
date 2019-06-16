@@ -6,7 +6,7 @@
 
 
 
-    if ( GILAD_DISABLE_EMOJI ) {
+    if ( TYPESIX_DISABLE_EMOJI ) {
 
 		add_action( 'init', function() {
 			remove_action( 'admin_print_scripts', 'print_emoji_detection_script' );
