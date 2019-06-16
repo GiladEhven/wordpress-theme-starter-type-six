@@ -14,11 +14,11 @@
 
                     <?php
 
-                        h_template_begin();
+                        h_get_template_part_before();
 
                         get_template_part( 'parts/loop', 'search' );
 
-                        h_template_end();
+                        h_get_template_part_after();
 
                     ?>
 
