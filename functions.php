@@ -15,6 +15,10 @@
 
     if ( ! defined( 'TYPESIX_CSS_CLASSES_FOR_BODY'                  ) ) { define( 'TYPESIX_CSS_CLASSES_FOR_BODY',                  'default' );  }
     if ( ! defined( 'TYPESIX_CSS_CLASSES_FOR_BODY_HEADER'           ) ) { define( 'TYPESIX_CSS_CLASSES_FOR_BODY_HEADER',           'default' );  }
+    if ( ! defined( 'TYPESIX_CSS_CLASSES_FOR_COMMENTS_AREA'         ) ) { define( 'TYPESIX_CSS_CLASSES_FOR_COMMENTS_AREA',         'default' );  }
+    if ( ! defined( 'TYPESIX_CSS_CLASSES_FOR_COMMENTS_AREA_FOOTER'  ) ) { define( 'TYPESIX_CSS_CLASSES_FOR_COMMENTS_AREA_FOOTER',  'default' );  }
+    if ( ! defined( 'TYPESIX_CSS_CLASSES_FOR_COMMENTS_AREA_HEADER'  ) ) { define( 'TYPESIX_CSS_CLASSES_FOR_COMMENTS_AREA_HEADER',  'default' );  }
+    if ( ! defined( 'TYPESIX_CSS_CLASSES_FOR_COMMENTS_AREA_LIST'    ) ) { define( 'TYPESIX_CSS_CLASSES_FOR_COMMENTS_AREA_LIST',    'default' );  }
     if ( ! defined( 'TYPESIX_CSS_CLASSES_FOR_MAIN'                  ) ) { define( 'TYPESIX_CSS_CLASSES_FOR_MAIN',                  'default' );  }
     if ( ! defined( 'TYPESIX_CSS_CLASSES_FOR_BODY_FOOTER'           ) ) { define( 'TYPESIX_CSS_CLASSES_FOR_BODY_FOOTER',           'default' );  }
     if ( ! defined( 'TYPESIX_CSS_CLASSES_FOR_ENTRY_ARTICLE'         ) ) { define( 'TYPESIX_CSS_CLASSES_FOR_ENTRY_ARTICLE',         'default' );  }

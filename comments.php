@@ -8,7 +8,7 @@
 
 ?>
 
-<div id="comments" class="comments-area">
+<div class="<?php echo TYPESIX_CSS_CLASSES_FOR_COMMENTS_AREA; ?>" id="comments-area">
 
     <?php
 
@@ -16,18 +16,24 @@
 
             ?>
 
-            <h2>
+            <header class="<?php echo TYPESIX_CSS_CLASSES_FOR_COMMENTS_AREA_HEADER; ?>" id="comments-header">
 
-                <?php
+                <h2>
 
-                    $v_comment_count = get_comments_number();
+                    <?php
 
-                    // WPCS: XSS OK.
-                    printf( esc_html( _nx( TYPESIX_SET_COMMENTS_TITLE_FOR_ONE, TYPESIX_SET_COMMENTS_TITLE_FOR_MORE, $v_comment_count, 'comments title', 'wordpress-theme-starter-type-six' ) ), number_format_i18n( $v_comment_count ), '<span>' . get_the_title() . '</span>' );
+                        $v_comment_count = get_comments_number();
 
-                ?>
+                        // WPCS: XSS OK.
+                        printf( esc_html( _nx( TYPESIX_SET_COMMENTS_TITLE_FOR_ONE, TYPESIX_SET_COMMENTS_TITLE_FOR_MORE, $v_comment_count, 'comments title', 'wordpress-theme-starter-type-six' ) ), number_format_i18n( $v_comment_count ), '<span>' . get_the_title() . '</span>' );
 
-            </h2>
+                    ?>
+
+                </h2>
+
+            </header>
+
+            <section class="<?php echo TYPESIX_CSS_CLASSES_FOR_COMMENTS_AREA_LIST; ?>" id="comments-list">
 
             <?php the_comments_navigation(); ?>
 
@@ -58,36 +64,57 @@
                     ?><p class="no-comments"><?php esc_html_e( TYPESIX_SET_COMMENTS_CLOSED, 'wordpress-theme-starter-type-six' ); ?></p><?php
                 }
 
+            ?>
+
+            </section>
+
+            <?php
+
         } else {
 
-            //
+            ?>
+
+                <header class="<?php echo TYPESIX_CSS_CLASSES_FOR_COMMENTS_AREA_HEADER; ?>" id="comments-header"></header>
+
+                <section class="<?php echo TYPESIX_CSS_CLASSES_FOR_COMMENTS_AREA_LIST; ?>" id="comments-list"></section>
+
+
+            <?php
 
         }
 
-        comment_form( array(
+        ?>
 
-            'comment_field'        => TYPESIX_SET_COMMENT_FORM_FIELD_COMMENT,
-            'comment_notes_after'  => TYPESIX_SET_COMMENT_FORM_NOTES_AFTER_BOX,
-            'comment_notes_before' => TYPESIX_SET_COMMENT_FORM_NOTES_BEFORE_BOX,
+        <footer class="<?php echo TYPESIX_CSS_CLASSES_FOR_COMMENTS_AREA_FOOTER; ?>" id="comments-footer">
 
-            'fields'               => array(
+            <?php
 
-                'author'           => TYPESIX_SET_COMMENT_FORM_FIELD_AUTHOR,
-                'email'            => TYPESIX_SET_COMMENT_FORM_FIELD_EMAIL,
-                'url'              => TYPESIX_SET_COMMENT_FORM_FIELD_URL,
+                comment_form( array(
 
-            ),
+                    'comment_field'        => TYPESIX_SET_COMMENT_FORM_FIELD_COMMENT,
+                    'comment_notes_after'  => TYPESIX_SET_COMMENT_FORM_NOTES_AFTER_BOX,
+                    'comment_notes_before' => TYPESIX_SET_COMMENT_FORM_NOTES_BEFORE_BOX,
 
-            'label_submit'         => TYPESIX_SET_COMMENT_FORM_SUBMIT,
-            'logged_in_as'         => TYPESIX_SET_COMMENT_FORM_LOGGED_IN_AS,
-            'must_log_in'          => TYPESIX_SET_COMMENT_FORM_MUST_LOG_IN,
-            'title_reply'          => TYPESIX_SET_COMMENT_FORM_TITLE,
-            'title_reply_after'    => TYPESIX_SET_COMMENT_FORM_REPLY_AFTER,
-            'title_reply_before'   => TYPESIX_SET_COMMENT_FORM_REPLY_BEFORE,
-            'title_reply_to'       => TYPESIX_SET_COMMENT_FORM_REPLY_TO,
+                    'fields'               => array(
 
-        ) );
+                        'author'           => TYPESIX_SET_COMMENT_FORM_FIELD_AUTHOR,
+                        'email'            => TYPESIX_SET_COMMENT_FORM_FIELD_EMAIL,
+                        'url'              => TYPESIX_SET_COMMENT_FORM_FIELD_URL,
 
-    ?>
+                    ),
+
+                    'label_submit'         => TYPESIX_SET_COMMENT_FORM_SUBMIT,
+                    'logged_in_as'         => TYPESIX_SET_COMMENT_FORM_LOGGED_IN_AS,
+                    'must_log_in'          => TYPESIX_SET_COMMENT_FORM_MUST_LOG_IN,
+                    'title_reply'          => TYPESIX_SET_COMMENT_FORM_TITLE,
+                    'title_reply_after'    => TYPESIX_SET_COMMENT_FORM_REPLY_AFTER,
+                    'title_reply_before'   => TYPESIX_SET_COMMENT_FORM_REPLY_BEFORE,
+                    'title_reply_to'       => TYPESIX_SET_COMMENT_FORM_REPLY_TO,
+
+                ) );
+
+            ?>
+
+        </footer>
 
 </div>
