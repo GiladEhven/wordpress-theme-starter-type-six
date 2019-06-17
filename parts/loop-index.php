@@ -6,4 +6,4 @@
 
 
 
-    get_template_part( 'parts/loop', 'post' );
+    get_template_part( 'parts/loop', 'archive' );

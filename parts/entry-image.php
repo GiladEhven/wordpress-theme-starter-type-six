@@ -6,4 +6,4 @@
 
 
 
-    get_template_part( 'parts/loop', 'archive' );
+?><h1>This is an image entry.</h1>

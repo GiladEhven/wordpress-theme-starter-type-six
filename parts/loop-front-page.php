@@ -20,7 +20,7 @@
 
 			h_loop_entry_before();
 
-			get_template_part( 'parts/entry', 'home' );
+			get_template_part( 'parts/entry', 'front-page' );
 
 			h_loop_entry_after();
 

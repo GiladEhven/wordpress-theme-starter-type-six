@@ -6,4 +6,4 @@
 
 
 
-    get_template_part( 'parts/loop', 'archive' );
+?><h1>Is this <em>the</em> home entry?</h1>

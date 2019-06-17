@@ -8,7 +8,7 @@
 
         h_get_template_part_before();
 
-            get_template_part( 'parts/loop', get_post_type() );
+            get_template_part( 'parts/loop', 'tag' );
 
         h_get_template_part_after();
 
