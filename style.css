@@ -2,17 +2,58 @@
  *
  * Theme Name:              WordPress Theme Starter Type Six
  *
- * Author:                  Gilad Ehven (Ehventerprise LLC)
+ * Author:                  Gilad Ehven
  * Author URI:              http://gilad-ehven.com
- * GitHub Theme URI:        https://github.com/GiladEhven/wordpress-theme-starter-type-six
- * Contributors:            Mihal Ehven (Ehventerprise LLC)
- * Description:             WordPress starter [parent] theme for ACF based implemntations.
+ * Description:             Development theme with support for key features in a parent format that is designed to be implemented via child theme. This parent contains almost no design (beyond very basic implementations that can be used as examples and testable handlers).
  * Domain Path:             /languages
- * Privacy Policy:          ?
- * Terms and Conditions:    ?
- * Terms of Use:            ?
+ * License:					GNU General Public License v2 or later
+ * License URI:				http://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain:             wordpress-theme-starter-type-six
  * Theme URI:               https://github.com/GiladEhven/wordpress-theme-starter-type-six
- * Version:                 0.1.0
+ * Version:                 0.2.0
  *
  */
+
+
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ *                                                                                                               *
+ *                                                                                                               *
+ *         D E C L A R E D   A N D   D E F I N E D   T O   S A T I S F Y   W P   R E Q U I R E M E N T S         *
+ *                                                                                                               *
+ *                                                                                                               *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+.bypostauthor {}
+.gallery-caption {}
+.sticky {}
+.wp-caption {}
+.wp-caption-text {}
+
+.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+
+.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+.alignright {
+    float:right;
+    margin: 5px 0 20px 20px;
+}
+
+.screen-reader-text {
+	border: 0;
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute !important;
+	width: 1px;
+	word-wrap: normal !important;
+}
