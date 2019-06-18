@@ -6,12 +6,12 @@
 
 	    add_action( 'wp_enqueue_scripts', function() {
 
-	        wp_deregister_script( 'jquery' );
+	        wp_enqueue_style( 'bootstrap-css', 'https://stackpath.bootstrapcdn.com/bootstrap/'     . TYPESIX_BOOTSTRAP_VERSION . '/css/bootstrap.min.css', array(), null, 'all' );
 
-	        wp_enqueue_style( 'bootstrap-css', 'https://stackpath.bootstrapcdn.com/bootstrap/'     . TYPESIX_BOOTSTRAP_VERSION . '/css/bootstrap.min.css', array(),               null, 'all' );
+			wp_register_script( 'jquery-for-bootstrap', 'https://code.jquery.com/jquery-'          . TYPESIX_JQUERY_VERSION    . '.slim.min.js' );
+			wp_add_inline_script( 'jquery-for-bootstrap', 'var jquery_for_bootstrap = $.noConflict(true);' );
 
-	        wp_enqueue_script( 'jquery-new',   'https://code.jquery.com/jquery-'                   . TYPESIX_JQUERY_VERSION    . '.slim.min.js',           array(),               null, true );
-	        wp_enqueue_script( 'popper-js',    'https://cdnjs.cloudflare.com/ajax/libs/popper.js/' . TYPESIX_POPPER_VERSION    . '/umd/popper.min.js',     array( 'jquery-new' ), null, true );
+	        wp_enqueue_script( 'popper-js',    'https://cdnjs.cloudflare.com/ajax/libs/popper.js/' . TYPESIX_POPPER_VERSION    . '/umd/popper.min.js',     array( 'jquery-for-bootstrap' ), null, true );
 	        wp_enqueue_script( 'bootstrap-js', 'https://stackpath.bootstrapcdn.com/bootstrap/'     . TYPESIX_BOOTSTRAP_VERSION . '/js/bootstrap.min.js',   array( 'popper-js' ),  null, true );
 
 	    } );
