@@ -9,7 +9,11 @@
     $wp_user_object = get_userdata( get_current_user_id() );
     $user_nicename  = $wp_user_object->user_nicename;
 
-    $req = get_option( 'require_name_email' );
+    // TODO: Populate each of the following with values required below
+    $aria_req       = 0;
+    $commenter      = array( 'comment_author' => 0, 'comment_author_email' => 0, 'comment_author_url' => 0 );
+
+    $req            = get_option( 'require_name_email' );
 
 
 
@@ -36,7 +40,7 @@
 
 
 
-    if ( ! defined( 'TYPESIX_ENABLE_PALETTE'                                ) ) { define( 'TYPESIX_ENABLE_PALETTE',                                false ); }
+    if ( ! defined( 'TYPESIX_ENABLE_PALETTE'                        ) ) { define( 'TYPESIX_ENABLE_PALETTE',                        false ); }
 
 
 
