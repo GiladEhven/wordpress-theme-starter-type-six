@@ -92,6 +92,7 @@
     if ( is_admin() ) {
 
         require_once( get_template_directory() . '/functions/admin-cleanup.php' );
+        require_once( get_template_directory() . '/functions/admin-resources.php' );
 
         if ( TYPESIX_SUPPORT_BEAVER_BUILDER ) require_once( get_template_directory() . '/support/admin-beaver-builder.php' );
         if ( TYPESIX_SUPPORT_CUSTOMIZER )     require_once( get_template_directory() . '/support/admin-customizer.php' );
