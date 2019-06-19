@@ -75,7 +75,7 @@
     if ( ! defined( 'TYPESIX_SUPPORT_BEAVER_BUILDER'                ) ) { define( 'TYPESIX_SUPPORT_BEAVER_BUILDER',                false ); }
     if ( ! defined( 'TYPESIX_SUPPORT_CUSTOMIZER'                    ) ) { define( 'TYPESIX_SUPPORT_CUSTOMIZER',                    false ); }
     if ( ! defined( 'TYPESIX_SUPPORT_GIVE_WP'                       ) ) { define( 'TYPESIX_SUPPORT_GIVE_WP',                       false ); }
-    if ( ! defined( 'TYPESIX_SUPPORT_GUTENBERG'                     ) ) { define( 'TYPESIX_SUPPORT_GUTENBERG',                     false ); }
+    if ( ! defined( 'TYPESIX_SUPPORT_GUTENBERG'                     ) ) { define( 'TYPESIX_SUPPORT_GUTENBERG',                     true ); }
     if ( ! defined( 'TYPESIX_SUPPORT_WOOCOMMERCE'                   ) ) { define( 'TYPESIX_SUPPORT_WOOCOMMERCE',                   false ); }
     if ( ! defined( 'TYPESIX_SUPPORT_WP_FEATURES'                   ) ) { define( 'TYPESIX_SUPPORT_WP_FEATURES',                   true ); }
 
@@ -93,8 +93,6 @@
 
         require_once( get_template_directory() . '/functions/admin-cleanup.php' );
         require_once( get_template_directory() . '/functions/admin-resources.php' );
-
-        if ( ! TYPESIX_SUPPORT_GUTENBERG )    add_filter( 'use_block_editor_for_post', '__return_false', 10 );
 
         if ( TYPESIX_SUPPORT_BEAVER_BUILDER ) require_once( get_template_directory() . '/support/admin-beaver-builder.php' );
         if ( TYPESIX_SUPPORT_CUSTOMIZER )     require_once( get_template_directory() . '/support/admin-customizer.php' );
