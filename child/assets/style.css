@@ -1,0 +1,17 @@
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ *                                                               *
+ *                                                               *
+ *          A U T O L O A D E D   C H I L D   S T Y L E          *
+ *                                                               *
+ *                                                               *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+body > footer > .row,
+body > header > .row {
+	background-color: #ddd;
+	height: 160px;
+}
+
+main {
+	min-height: 80vh;
+}
