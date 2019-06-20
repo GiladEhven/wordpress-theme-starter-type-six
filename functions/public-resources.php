@@ -1,5 +1,11 @@
 <?php
 
+	namespace Ehven\Gilad\WordPress\Themes\Parents\TypeSix;
+
+    if ( ! defined( 'ABSPATH' ) ) exit( 'Nothing to see here. Go <a href="/">home</a>.' );
+
+
+
 	if ( defined( 'TYPESIX_USE_BOOTSTRAP' ) && TYPESIX_USE_BOOTSTRAP ) {
 
 		get_template_part( 'support/public-bootstrap/version', TYPESIX_USE_BOOTSTRAP );
