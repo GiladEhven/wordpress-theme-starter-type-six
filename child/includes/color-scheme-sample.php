@@ -1,6 +1,6 @@
 <?php
 
-	namespace Ehven\Gilad\WordPress\Themes\Parents\TypeSix;
+	namespace Ehven\Gilad\WordPress\Themes\Children\TypeSix;
 
     if ( ! defined( 'ABSPATH' ) ) exit( 'Nothing to see here. Go <a href="/">home</a>.' );
 
