@@ -30,6 +30,14 @@
 
 		}
 
+		h_loop_posts_navigation_before();
+
+		the_posts_navigation();
+
+		h_loop_posts_navigation_after();
+
+		// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - //
+
 		h_loop_if_end();
 
 	} else {
