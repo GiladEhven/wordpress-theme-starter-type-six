@@ -32,7 +32,7 @@
 
 		h_loop_posts_navigation_before();
 
-		the_posts_navigation();
+		get_template_part( 'parts/nav', 'posts' );
 
 		h_loop_posts_navigation_after();
 
