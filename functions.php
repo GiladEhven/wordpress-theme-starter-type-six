@@ -70,7 +70,6 @@
     if ( ! defined( 'TYPESIX_SET_COMMENT_FORM_TITLE'                ) ) { define( 'TYPESIX_SET_COMMENT_FORM_TITLE',                __( 'Something to say?', 'wordpress-theme-starter-type-six' ) ); }
 
     if ( ! defined( 'TYPESIX_SET_COMMENTS_AVATAR_SIZE'              ) ) { define( 'TYPESIX_SET_COMMENTS_AVATAR_SIZE',              64 ); }
-    if ( ! defined( 'TYPESIX_SET_COMMENTS_CLOSED'                   ) ) { define( 'TYPESIX_SET_COMMENTS_CLOSED',                   'Comments are closed.' ); }
     if ( ! defined( 'TYPESIX_SET_COMMENTS_REPLY_TEXT'               ) ) { define( 'TYPESIX_SET_COMMENTS_REPLY_TEXT',               'Reply to this comment' ); }
     if ( ! defined( 'TYPESIX_SET_COMMENTS_REVERSE_CHILDREN'         ) ) { define( 'TYPESIX_SET_COMMENTS_REVERSE_CHILDREN',         false ); }
     if ( ! defined( 'TYPESIX_SET_COMMENTS_TITLE_FOR_MORE'           ) ) { define( 'TYPESIX_SET_COMMENTS_TITLE_FOR_MORE',           '%1$s comments on &ldquo;%2$s&rdquo;' ); }

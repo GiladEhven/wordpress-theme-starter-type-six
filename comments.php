@@ -61,7 +61,7 @@
 
                 if ( ! comments_open() ) {
 
-                    ?><p class="no-comments"><?php esc_html_e( TYPESIX_SET_COMMENTS_CLOSED, 'wordpress-theme-starter-type-six' ); ?></p><?php
+                    ?><p class="no-comments"><?php esc_html_e( 'Comments are closed.', 'wordpress-theme-starter-type-six' ); ?></p><?php
                 }
 
             ?>
