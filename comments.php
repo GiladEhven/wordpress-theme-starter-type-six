@@ -25,7 +25,25 @@
                         $v_comment_count = get_comments_number();
 
                         // WPCS: XSS OK.
-                        printf( esc_html( _nx( TYPESIX_SET_COMMENTS_TITLE_FOR_ONE, TYPESIX_SET_COMMENTS_TITLE_FOR_MORE, $v_comment_count, 'comments title', 'wordpress-theme-starter-type-six' ) ), number_format_i18n( $v_comment_count ), '<span>' . get_the_title() . '</span>' );
+                        printf(
+
+                            esc_html(
+
+                                _nx(
+
+                                    'One comment on &ldquo;%2$s&rdquo;',
+                                    '%1$s comments on &ldquo;%2$s&rdquo;',
+                                    $v_comment_count,
+                                    'comments title with number of comments',
+                                    'wordpress-theme-starter-type-six'
+
+                                )
+
+                            ),
+
+                            number_format_i18n( $v_comment_count ), '<span>' . get_the_title() . '</span>'
+
+                        );
 
                     ?>
 

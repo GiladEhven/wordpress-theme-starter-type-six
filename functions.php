@@ -72,8 +72,6 @@
     if ( ! defined( 'TYPESIX_SET_COMMENTS_AVATAR_SIZE'              ) ) { define( 'TYPESIX_SET_COMMENTS_AVATAR_SIZE',              64 ); }
     if ( ! defined( 'TYPESIX_SET_COMMENTS_REPLY_TEXT'               ) ) { define( 'TYPESIX_SET_COMMENTS_REPLY_TEXT',               'Reply to this comment' ); }
     if ( ! defined( 'TYPESIX_SET_COMMENTS_REVERSE_CHILDREN'         ) ) { define( 'TYPESIX_SET_COMMENTS_REVERSE_CHILDREN',         false ); }
-    if ( ! defined( 'TYPESIX_SET_COMMENTS_TITLE_FOR_MORE'           ) ) { define( 'TYPESIX_SET_COMMENTS_TITLE_FOR_MORE',           '%1$s comments on &ldquo;%2$s&rdquo;' ); }
-    if ( ! defined( 'TYPESIX_SET_COMMENTS_TITLE_FOR_ONE'            ) ) { define( 'TYPESIX_SET_COMMENTS_TITLE_FOR_ONE',            'One comment on &ldquo;%2$s&rdquo;' ); }
     if ( ! defined( 'TYPESIX_SET_COMMENTS_STYLE'                    ) ) { define( 'TYPESIX_SET_COMMENTS_STYLE',                    'ol' ); }
     if ( ! defined( 'TYPESIX_SET_COMMENTS_TYPE'                     ) ) { define( 'TYPESIX_SET_COMMENTS_TYPE',                     'comment' ); }
 
