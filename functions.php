@@ -102,7 +102,6 @@
         require_once( get_template_directory() . '/functions/admin-cleanup.php' );
         require_once( get_template_directory() . '/functions/admin-resources.php' );
 
-        if ( TYPESIX_SUPPORT_BEAVER_BUILDER ) require_once( get_template_directory() . '/support/admin-beaver-builder.php' );
         if ( TYPESIX_SUPPORT_CUSTOMIZER )     require_once( get_template_directory() . '/support/admin-customizer.php' );
         if ( TYPESIX_SUPPORT_GIVE_WP )        require_once( get_template_directory() . '/support/admin-give-wp.php' );
         if ( TYPESIX_SUPPORT_GUTENBERG )      require_once( get_template_directory() . '/support/admin-gutenberg.php' );
@@ -115,7 +114,6 @@
         require_once( get_template_directory() . '/functions/public-resources.php' );
         require_once( get_template_directory() . '/functions/public-template-tags.php' );
 
-        if ( TYPESIX_SUPPORT_BEAVER_BUILDER ) require_once( get_template_directory() . '/support/public-beaver-builder.php' );
         if ( TYPESIX_SUPPORT_CUSTOMIZER )     require_once( get_template_directory() . '/support/public-customizer.php' );
         if ( TYPESIX_SUPPORT_GIVE_WP )        require_once( get_template_directory() . '/support/public-give-wp.php' );
         if ( TYPESIX_SUPPORT_GUTENBERG )      require_once( get_template_directory() . '/support/public-gutenberg.php' );
@@ -123,4 +121,5 @@
 
     }
 
-    if ( TYPESIX_SUPPORT_WP_FEATURES )    require_once( get_template_directory() . '/support/common-wordpress-features.php' );
+    if ( TYPESIX_SUPPORT_BEAVER_BUILDER )     require_once( get_template_directory() . '/support/common-beaver-builder.php' );
+    if ( TYPESIX_SUPPORT_WP_FEATURES )        require_once( get_template_directory() . '/support/common-wordpress-features.php' );
