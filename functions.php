@@ -6,8 +6,16 @@
 
 
 
-    $wp_user_object = get_userdata( get_current_user_id() );
-    $user_nicename  = $wp_user_object->user_nicename;
+    if ( is_user_logged_in() ) {
+
+        $wp_user_object = get_userdata( get_current_user_id() );
+        $user_nicename  = $wp_user_object->user_nicename;
+
+    } else {
+
+        $user_nicename  = 'placeholder';
+
+    }
 
     // TODO: Populate each of the following with values required below
     $aria_req       = 0;
