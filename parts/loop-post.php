@@ -28,7 +28,7 @@
 
 			h_loop_post_navigation_before();
 
-			the_post_navigation();
+			get_template_part( 'parts/nav', 'post' );
 
 			h_loop_post_navigation_after();
 
