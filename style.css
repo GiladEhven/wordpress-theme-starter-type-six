@@ -57,3 +57,12 @@
 	width: 1px;
 	word-wrap: normal !important;
 }
+
+.size-auto, 
+.size-full,
+.size-large,
+.size-medium,
+.size-thumbnail {
+	height: auto;
+	max-width: 100%;
+}

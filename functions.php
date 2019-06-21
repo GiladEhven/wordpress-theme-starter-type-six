@@ -107,7 +107,6 @@
         if ( TYPESIX_SUPPORT_GIVE_WP )        require_once( get_template_directory() . '/support/admin-give-wp.php' );
         if ( TYPESIX_SUPPORT_GUTENBERG )      require_once( get_template_directory() . '/support/admin-gutenberg.php' );
         if ( TYPESIX_SUPPORT_WOOCOMMERCE )    require_once( get_template_directory() . '/support/admin-woocommerce.php' );
-        if ( TYPESIX_SUPPORT_WP_FEATURES )    require_once( get_template_directory() . '/support/admin-wordpress-features.php' );
 
     } else {
 
@@ -121,6 +120,7 @@
         if ( TYPESIX_SUPPORT_GIVE_WP )        require_once( get_template_directory() . '/support/public-give-wp.php' );
         if ( TYPESIX_SUPPORT_GUTENBERG )      require_once( get_template_directory() . '/support/public-gutenberg.php' );
         if ( TYPESIX_SUPPORT_WOOCOMMERCE )    require_once( get_template_directory() . '/support/public-woocommerce.php' );
-        if ( TYPESIX_SUPPORT_WP_FEATURES )    require_once( get_template_directory() . '/support/public-wordpress-features.php' );
 
     }
+
+    if ( TYPESIX_SUPPORT_WP_FEATURES )    require_once( get_template_directory() . '/support/common-wordpress-features.php' );
