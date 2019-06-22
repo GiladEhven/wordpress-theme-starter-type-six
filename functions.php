@@ -99,6 +99,8 @@
         require_once( get_template_directory() . '/functions/admin-cleanup.php' );
         require_once( get_template_directory() . '/functions/admin-resources.php' );
 
+        if ( ! TYPESIX_SUPPORT_GUTENBERG )    add_filter( 'use_block_editor_for_post', '__return_false', 10 );
+
         if ( TYPESIX_SUPPORT_CUSTOMIZER )     require_once( get_template_directory() . '/support/admin-customizer.php' );
         if ( TYPESIX_SUPPORT_GIVE_WP )        require_once( get_template_directory() . '/support/admin-give-wp.php' );
         if ( TYPESIX_SUPPORT_GUTENBERG )      require_once( get_template_directory() . '/support/admin-gutenberg.php' );
