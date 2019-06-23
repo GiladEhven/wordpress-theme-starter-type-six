@@ -83,6 +83,7 @@
     if ( ! defined( 'TYPESIX_SUPPORT_GUTENBERG'                     ) ) { define( 'TYPESIX_SUPPORT_GUTENBERG',                     true ); }
     if ( ! defined( 'TYPESIX_SUPPORT_WOOCOMMERCE'                   ) ) { define( 'TYPESIX_SUPPORT_WOOCOMMERCE',                   false ); }
     if ( ! defined( 'TYPESIX_SUPPORT_WP_COMMON'                     ) ) { define( 'TYPESIX_SUPPORT_WP_COMMON',                     true ); }
+    if ( ! defined( 'TYPESIX_SUPPORT_WP_CUSTOM_HEADER'              ) ) { define( 'TYPESIX_SUPPORT_WP_CUSTOM_HEADER',              true ); }
 
 
 
@@ -121,4 +122,37 @@
     }
 
     if ( TYPESIX_SUPPORT_BEAVER_BUILDER )     require_once( get_template_directory() . '/support/common-beaver-builder.php' );
-    if ( TYPESIX_SUPPORT_WP_COMMON )        require_once( get_template_directory() . '/support/common-wordpress-common-features.php' );
+    if ( TYPESIX_SUPPORT_WP_COMMON )          require_once( get_template_directory() . '/support/common-wordpress-common-features.php' );
+
+    if ( TYPESIX_SUPPORT_WP_CUSTOM_HEADER )   {
+
+        $default_jpg = get_stylesheet_directory_uri() . '/images/headers/default.jpg';
+        $default_png = get_stylesheet_directory_uri() . '/images/headers/default.png';
+
+        if ( file_exists( $default_jpg ) ) {
+
+            $default_image = $default_jpg;
+
+        } elseif ( file_exists( $default_png ) ) {
+
+            $default_image = $default_png;
+
+        } else {
+
+            $default_image = false;
+
+        }
+
+        if ( ! defined( 'TYPESIX_CUSTOM_HEADER_DEFAULT_IMAGE'       ) ) { define( 'TYPESIX_CUSTOM_HEADER_DEFAULT_IMAGE',           $default_image ); }
+        if ( ! defined( 'TYPESIX_CUSTOM_HEADER_DEFAULT_TEXT_COLOR'  ) ) { define( 'TYPESIX_CUSTOM_HEADER_DEFAULT_TEXT_COLOR',      '222' ); }
+        if ( ! defined( 'TYPESIX_CUSTOM_HEADER_FLEX_HEIGHT'         ) ) { define( 'TYPESIX_CUSTOM_HEADER_FLEX_HEIGHT',             true ); }
+        if ( ! defined( 'TYPESIX_CUSTOM_HEADER_FLEX_WIDTH'          ) ) { define( 'TYPESIX_CUSTOM_HEADER_FLEX_WIDTH',              true ); }
+        if ( ! defined( 'TYPESIX_CUSTOM_HEADER_HEIGHT'              ) ) { define( 'TYPESIX_CUSTOM_HEADER_HEIGHT',                  '400' ); }
+        if ( ! defined( 'TYPESIX_CUSTOM_HEADER_RANDOM_DEFAULT'      ) ) { define( 'TYPESIX_CUSTOM_HEADER_RANDOM_DEFAULT',          false ); }
+        if ( ! defined( 'TYPESIX_CUSTOM_HEADER_TEXT'                ) ) { define( 'TYPESIX_CUSTOM_HEADER_TEXT',                    true ); }
+        if ( ! defined( 'TYPESIX_CUSTOM_HEADER_UPLOADS'             ) ) { define( 'TYPESIX_CUSTOM_HEADER_UPLOADS',                 false ); }
+        if ( ! defined( 'TYPESIX_CUSTOM_HEADER_WIDTH'               ) ) { define( 'TYPESIX_CUSTOM_HEADER_WIDTH',                   '1400' ); }
+
+        require_once( get_template_directory() . '/support/common-wordpress-custom-header.php' );
+
+    }
