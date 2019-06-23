@@ -82,7 +82,7 @@
     if ( ! defined( 'TYPESIX_SUPPORT_GIVE_WP'                       ) ) { define( 'TYPESIX_SUPPORT_GIVE_WP',                       false ); }
     if ( ! defined( 'TYPESIX_SUPPORT_GUTENBERG'                     ) ) { define( 'TYPESIX_SUPPORT_GUTENBERG',                     true ); }
     if ( ! defined( 'TYPESIX_SUPPORT_WOOCOMMERCE'                   ) ) { define( 'TYPESIX_SUPPORT_WOOCOMMERCE',                   false ); }
-    if ( ! defined( 'TYPESIX_SUPPORT_WP_FEATURES'                   ) ) { define( 'TYPESIX_SUPPORT_WP_FEATURES',                   true ); }
+    if ( ! defined( 'TYPESIX_SUPPORT_WP_COMMON'                     ) ) { define( 'TYPESIX_SUPPORT_WP_COMMON',                     true ); }
 
 
 
@@ -121,4 +121,4 @@
     }
 
     if ( TYPESIX_SUPPORT_BEAVER_BUILDER )     require_once( get_template_directory() . '/support/common-beaver-builder.php' );
-    if ( TYPESIX_SUPPORT_WP_FEATURES )        require_once( get_template_directory() . '/support/common-wordpress-features.php' );
+    if ( TYPESIX_SUPPORT_WP_COMMON )        require_once( get_template_directory() . '/support/common-wordpress-common-features.php' );
