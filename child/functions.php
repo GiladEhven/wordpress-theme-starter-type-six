@@ -1,6 +1,6 @@
 <?php
 
-	namespace Ehven\Gilad\WordPress\Themes\Children\TypeSix;
+    namespace Ehven\Gilad\WordPress\Themes\Children\TypeSix;
 
     if ( ! defined( 'ABSPATH' ) ) exit( 'Nothing to see here. Go <a href="/">home</a>.' );
 
@@ -37,6 +37,28 @@
 
     });
 
+    // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+    add_action( 'h_entry_header', function() {
+
+        echo '<h3>This is a design hooked into the entry header... This particular demo content is not set within any document type detection conditional, so it will display on every template that uses the <code>h_entry_header()</code> action hook.</h3>';
+
+    });
+
+    // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+    add_action( 'h_loop_entry_before', function() {
+
+        ?><div class="row"><div class="col-12"><?php
+
+    });
+
+    add_action( 'h_loop_entry_after', function() {
+
+        ?></div></div><?php
+
+    });
+
     // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - //
 
     add_action( 'h_loop_post_navigation_before', function() {
@@ -50,3 +72,9 @@
         ?></div></div><?php
 
     });
+
+    // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - //
+
+    $content_width = 1200;
+
+    // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - //
