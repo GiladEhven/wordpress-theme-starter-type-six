@@ -115,11 +115,11 @@
 	// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - //
 
 	$css_dependencies = '';
-	$css_file_path    = get_stylesheet_directory()     . '/assets/style.css';
-	$css_file_uri     = get_stylesheet_directory_uri() . '/assets/style.css';
+	$css_file_path    = get_stylesheet_directory()     . '/assets/child.css';
+	$css_file_uri     = get_stylesheet_directory_uri() . '/assets/child.css';
 	$js_dependencies  = '';
-	$js_file_path     = get_stylesheet_directory()     . '/assets/script.js';
-	$js_file_uri      = get_stylesheet_directory_uri() . '/assets/script.js';
+	$js_file_path     = get_stylesheet_directory()     . '/assets/child.js';
+	$js_file_uri      = get_stylesheet_directory_uri() . '/assets/child.js';
 
 	if ( defined( 'TYPESIX_USE_BOOTSTRAP' ) && TYPESIX_USE_BOOTSTRAP ) {
 
