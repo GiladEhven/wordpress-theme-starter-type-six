@@ -6,11 +6,20 @@
 
 
 
-	the_post_navigation( array(
+	previous_post_link( '<span id="post-nav-previous">%link</span>' );
 
-	    'mid_size'           => 2,
-	    'next_text'          => __( 'Next',            'wordpress-theme-starter-type-six' ),
-	    'prev_text'          => __( 'Prev',        'wordpress-theme-starter-type-six' ),
-	    'screen_reader_text' => __( 'Navigate Content', 'wordpress-theme-starter-type-six' ),
+	wp_link_pages( array(
+
+		'after'            => '</span>',
+		'before'           => '<span id="post-nav-paginator">',
+		'link_after'       => '',
+		'link_before'      => '',
+		'nextpagelink'     => 'Next',
+		'next_or_number'   => 'number',
+		'pagelink'         => '%',
+		'previouspagelink' => 'Previous',
+		'separator'        => ' ',
 
 	) );
+
+	next_post_link( '<span id="post-nav-next">%link</span>' );
