@@ -6,6 +6,18 @@
 
 
 
+    if ( TYPESIX_ENABLE_DEFAULT_STYLESHEET ) {
+
+	    add_action( 'wp_enqueue_scripts', function() {
+
+	        wp_enqueue_style( 'default-stylesheet', get_template_directory_uri() . '/style.css', array(), null, 'all' );
+
+	    } );
+
+    }
+
+	// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - //
+
 	if ( defined( 'TYPESIX_USE_BOOTSTRAP' ) && TYPESIX_USE_BOOTSTRAP ) {
 
 		get_template_part( 'support/public-bootstrap/version', TYPESIX_USE_BOOTSTRAP );

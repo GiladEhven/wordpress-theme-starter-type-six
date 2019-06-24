@@ -48,6 +48,7 @@
 
 
 
+    if ( ! defined( 'TYPESIX_ENABLE_DEFAULT_STYLESHEET'             ) ) { define( 'TYPESIX_ENABLE_DEFAULT_STYLESHEET',             true ); }
     if ( ! defined( 'TYPESIX_ENABLE_PALETTE'                        ) ) { define( 'TYPESIX_ENABLE_PALETTE',                        false ); }
 
 
