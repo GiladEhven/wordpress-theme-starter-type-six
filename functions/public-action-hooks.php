@@ -33,6 +33,10 @@
     function h_loop_if_end()                     { do_action( 'h_loop_if_end' );                     }
     function h_loop_else_core()                  { do_action( 'h_loop_else_core' );                  }
 
+    function h_entry_header()                    { do_action( 'h_entry_header' );                    }
+    function h_entry_content()                   { do_action( 'h_entry_content' );                   }
+    function h_entry_footer()                    { do_action( 'h_entry_footer' );                    }
+
     function h_main_end()                        { do_action( 'h_main_end' );                        }
     function h_main_after()                      { do_action( 'h_main_after' );                      }
     function h_body_footer()                     { do_action( 'h_body_footer' );                     }
