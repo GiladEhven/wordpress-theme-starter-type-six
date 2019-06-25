@@ -121,6 +121,10 @@
         if ( TYPESIX_SUPPORT_GUTENBERG )      require_once( get_template_directory() . '/support/public-gutenberg.php' );
         if ( TYPESIX_SUPPORT_WOOCOMMERCE )    require_once( get_template_directory() . '/support/public-woocommerce.php' );
 
+        $autoload_strings = get_stylesheet_directory() . '/autoloads/strings.php';
+
+        if ( file_exists( $autoload_strings ) ) require_once( $autoload_strings );
+
     }
 
     if ( TYPESIX_SUPPORT_BEAVER_BUILDER )     require_once( get_template_directory() . '/support/common-beaver-builder.php' );
