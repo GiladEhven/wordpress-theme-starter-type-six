@@ -58,6 +58,64 @@
 
 			}
 
+		} elseif ( is_singular() ) {
+
+			switch ( $translated_text ) {
+
+				case 'Cancel reply to comment (return to regular reply form)' :
+		//			$translated_text = __( 'Cancel reply direct to comment', 'wordpress-theme-starter-type-six' );
+					break;
+
+				case 'Comment' :
+		//			$translated_text = __( 'Your Comment', 'wordpress-theme-starter-type-six' );
+					break;
+
+				case 'Currently logged in as <a href="%1$s">%2$s</a>. <a href="%3$s" title="Log out now...">Log out</a> to comment anonymously (or log in with a different account to comment as that user).' :
+		//			$translated_text = __( 'Logged in as <a href="%1$s">%2$s</a>. <a href="%3$s" title="Log out now...">Log out?</a>', 'wordpress-theme-starter-type-six' );
+					break;
+
+				case 'Email' :
+		//			$translated_text = __( 'Your Email', 'wordpress-theme-starter-type-six' );
+					break;
+
+				case 'Name' :
+		//			$translated_text = __( 'Your Name', 'wordpress-theme-starter-type-six' );
+					break;
+
+				case 'Reply to %s&rsquo;s comment' :
+		//			$translated_text = __( 'Comment on %s&rsquo;s comment', 'wordpress-theme-starter-type-six' );
+					break;
+
+				case 'Respond to this comment' :
+		//			$translated_text = __( 'Reply to this comment', 'wordpress-theme-starter-type-six' );
+					break;
+
+				case 'Submit Comment' :
+		//			$translated_text = __( 'Submit Comment Now', 'wordpress-theme-starter-type-six' );
+					break;
+
+				case 'The following HTML tags and attributes can be used in comments: %s' :
+		//			$translated_text = __( 'You may use the following HTML tags and attributes in your comment: %s', 'wordpress-theme-starter-type-six' );
+					break;
+
+				case 'Website' :
+		//			$translated_text = __( 'Your Website', 'wordpress-theme-starter-type-six' );
+					break;
+
+				case 'You must be <a href="%s">signed in</a> to comment.' :
+		//			$translated_text = __( 'You must be <a href="%s">logged in</a> to submit a comment.', 'wordpress-theme-starter-type-six' );
+					break;
+
+				case 'Your email address will not be shared.</p><p>Required fields are labeled in <strong>bold</strong>.' :
+		//			$translated_text = __( 'Your email address will not be shared with anyone.</p><p>Fields labeled in <strong>bold</strong> are required.', 'wordpress-theme-starter-type-six' );
+					break;
+
+				case 'Your thoughts are welcome!' :
+		//			$translated_text = __( 'Something to say?', 'wordpress-theme-starter-type-six' );
+					break;
+
+			}
+
 		}
 
 		return $translated_text;
