@@ -83,6 +83,7 @@
 
         require_once( get_template_directory() . '/functions/admin-cleanup.php' );
         require_once( get_template_directory() . '/functions/admin-resources.php' );
+        require_once( get_template_directory() . '/functions/admin-widgets.php' );
 
         if ( ! TYPESIX_SUPPORT_GUTENBERG )    add_filter( 'use_block_editor_for_post', '__return_false', 10 );
 
