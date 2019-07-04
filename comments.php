@@ -107,6 +107,7 @@
 
             <?php
 
+                $aria_req      = ( $req ? " aria-required='true'" : '' );
 
                 $user_data     = get_userdata( get_current_user_id() );
                 $user_nicename = $user_data->user_nicename;
