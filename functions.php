@@ -53,6 +53,10 @@
 
 
 
+    if ( ! defined( 'TYPESIX_SELECT_SITE_MODE'                      ) ) { define( 'TYPESIX_SELECT_SITE_MODE',                      'live' ); }
+
+
+
     if ( ! defined( 'TYPESIX_SET_COMMENTS_AVATAR_SIZE'              ) ) { define( 'TYPESIX_SET_COMMENTS_AVATAR_SIZE',              64 ); }
     if ( ! defined( 'TYPESIX_SET_COMMENTS_REVERSE_CHILDREN'         ) ) { define( 'TYPESIX_SET_COMMENTS_REVERSE_CHILDREN',         false ); }
     if ( ! defined( 'TYPESIX_SET_COMMENTS_STYLE'                    ) ) { define( 'TYPESIX_SET_COMMENTS_STYLE',                    'ol' ); }

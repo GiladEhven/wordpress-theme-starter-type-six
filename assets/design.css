@@ -1,0 +1,49 @@
+body > footer.container,
+body > footer.container-fluid,
+body > header.container,
+body > header.container-fluid,
+body > main.container,
+body > main.container-fluid {
+	border: double 5px #ddd;
+}
+
+body > main.container,
+body > main.container-fluid {
+	margin: 2px auto;
+}
+
+h3.col-10.offset-1 {
+	background-color: #ffe0a6;
+	margin-top: 8px;
+}
+
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11 {
+	border: solid 2px orange;
+	margin-top: 2px;
+}
+
+.col-12 {
+	border: solid 2px red;
+	margin: 2px;
+	max-width: calc( 100% - 4px );
+}
+
+.row {
+	border: double 5px #aaa;
+	margin: 2px -13px;
+}
+
+.row > article > .row,
+.row > div > .row {
+	border-color: #777;
+}

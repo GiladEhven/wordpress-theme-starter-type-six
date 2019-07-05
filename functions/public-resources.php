@@ -147,3 +147,16 @@
 	    } );
 
 	}
+
+
+	// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - //
+
+	if ( defined( 'TYPESIX_SELECT_SITE_MODE' ) && TYPESIX_SELECT_SITE_MODE === 'design' ) {
+
+	    add_action( 'wp_enqueue_scripts', function() {
+
+	        wp_enqueue_style( 'site-mode', get_template_directory_uri() . '/assets/' . TYPESIX_SELECT_SITE_MODE . '.css', array(), null, 'all' );
+
+	    } );
+
+	}
