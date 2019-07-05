@@ -6,7 +6,7 @@
 
 
 
-    echo '<div class="col-12">';
+    echo '<div class="' . TYPESIX_CSS_CLASSES_FOR_NAV_POSTS . '">';
 
     if ( is_search() ) {
 

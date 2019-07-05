@@ -33,6 +33,9 @@
     if ( ! defined( 'TYPESIX_CSS_CLASSES_FOR_COMMENTS_HEADER'       ) ) { define( 'TYPESIX_CSS_CLASSES_FOR_COMMENTS_HEADER',       'col-12' );  }
     if ( ! defined( 'TYPESIX_CSS_CLASSES_FOR_COMMENTS_LIST'         ) ) { define( 'TYPESIX_CSS_CLASSES_FOR_COMMENTS_LIST',         'col-12' );  }
     if ( ! defined( 'TYPESIX_CSS_CLASSES_FOR_MAIN'                  ) ) { define( 'TYPESIX_CSS_CLASSES_FOR_MAIN',                  'container' );  }
+    if ( ! defined( 'TYPESIX_CSS_CLASSES_FOR_MAIN_DIV'              ) ) { define( 'TYPESIX_CSS_CLASSES_FOR_MAIN_DIV',              'row' );  }
+    if ( ! defined( 'TYPESIX_CSS_CLASSES_FOR_NAV_POST'              ) ) { define( 'TYPESIX_CSS_CLASSES_FOR_NAV_POST',              'col-12' );  }
+    if ( ! defined( 'TYPESIX_CSS_CLASSES_FOR_NAV_POSTS'             ) ) { define( 'TYPESIX_CSS_CLASSES_FOR_NAV_POSTS',             'col-12' );  }
     if ( ! defined( 'TYPESIX_CSS_CLASSES_FOR_ENTRY_ARTICLE'         ) ) { define( 'TYPESIX_CSS_CLASSES_FOR_ENTRY_ARTICLE',         'row' );  }
     if ( ! defined( 'TYPESIX_CSS_CLASSES_FOR_ENTRY_ARTICLE_HEADER'  ) ) { define( 'TYPESIX_CSS_CLASSES_FOR_ENTRY_ARTICLE_HEADER',  'col-12' );  }
     if ( ! defined( 'TYPESIX_CSS_CLASSES_FOR_ENTRY_ARTICLE_SECTION' ) ) { define( 'TYPESIX_CSS_CLASSES_FOR_ENTRY_ARTICLE_SECTION', 'col-12' );  }
