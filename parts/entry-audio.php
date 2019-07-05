@@ -6,9 +6,9 @@
 
 
 
-	<article id="audio-<?php the_ID(); ?>" <?php post_class(); ?>>
+	<article id="audio-<?php the_ID(); ?>" <?php post_class( 'col-12' ); ?>>
 
-		<header class="audio-header">
+		<header class="audio-header row">
 
 			<?php
 
@@ -18,7 +18,7 @@
 
 				} else {
 
-					echo '<h3>This is the audio header. Attach any design to this space by hooking into <code>h_entry_header()</code> at the child theme.</h3>';
+					echo '<h3 class="col-10 offset-1">This is the audio header. Attach any design to this space by hooking into <code>h_entry_header()</code> at the child theme.</h3>';
 
 				}
 
@@ -26,7 +26,7 @@
 
 		</header>
 
-		<section class="audio-content">
+		<section class="audio-content row">
 
 			<?php
 
@@ -36,7 +36,7 @@
 
 				} else {
 
-					echo '<h3>This is the audio content. Attach any design to this space by hooking into <code>h_entry_content()</code> at the child theme.</h3>';
+					echo '<h3 class="col-10 offset-1">This is the audio content. Attach any design to this space by hooking into <code>h_entry_content()</code> at the child theme.</h3>';
 
 				}
 
@@ -44,7 +44,7 @@
 
 		</section>
 
-		<footer class="audio-footer">
+		<footer class="audio-footer row">
 
 			<?php
 
@@ -54,7 +54,7 @@
 
 				} else {
 
-					echo '<h3>This is the audio footer. Attach any design to this space by hooking into <code>h_entry_footer()</code> at the child theme.</h3>';
+					echo '<h3 class="col-10 offset-1">This is the audio footer. Attach any design to this space by hooking into <code>h_entry_footer()</code> at the child theme.</h3>';
 
 				}
 

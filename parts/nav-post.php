@@ -6,6 +6,8 @@
 
 
 
+    echo '<div class="col-12">';
+
 	previous_post_link( '<span id="post-nav-previous">%link</span>' );
 
 	wp_link_pages( array(
@@ -23,3 +25,5 @@
 	) );
 
 	next_post_link( '<span id="post-nav-next">%link</span>' );
+
+	echo '</div>';

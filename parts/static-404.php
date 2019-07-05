@@ -6,54 +6,60 @@
 
 ?>
 
-					<header>
+	<article id="error-not-found" <?php post_class( 'col-12' ); ?>>
 
-						<h1><?php esc_html_e( 'Oops! You&rsquo;re looking for something that doesn&rsquo;t exist here...', 'wordpress-theme-starter-type-six' ); ?></h1>
+		<header class="404-header row">
 
-					</header>
+			<?php
 
-					<section>
+				if ( has_action( 'h_entry_header' ) ) {
 
-						<p><?php esc_html_e( 'Try our handy search form, or the links on this page to browse the site.', 'wordpress-theme-starter-type-six' ); ?></p>
+					h_entry_header();
 
-						<?php
+				} else {
 
-							get_search_form();
+					echo '<h3 class="col-10 offset-1">This is the 404 header. Attach any design to this space by hooking into <code>h_entry_header()</code> at the child theme.</h3>';
 
-							the_widget( 'WP_Widget_Recent_Posts' );
+				}
 
-						?>
+			?>
 
-						<div class="widget widget_categories">
+		</header>
 
-							<h2 class="widget-title"><?php esc_html_e( 'Most Active Categories', 'wordpress-theme-starter-type-six' ); ?></h2>
+		<section class="404-content row">
 
-							<ul>
-								<?php
-									wp_list_categories( array(
-										'orderby'    => 'count',
-										'order'      => 'DESC',
-										'show_count' => 1,
-										'title_li'   => '',
-										'number'     => 10,
-									) );
-								?>
-							</ul>
+			<?php
 
-						</div>
+				if ( has_action( 'h_entry_content' ) ) {
 
-						<?php
+					h_entry_content();
 
-							$_s_archive_content = '<p>' . esc_html_e( 'And don&rsquo;t forget our monthly archives!', 'wordpress-theme-starter-type-six' ) . '</p>';
+				} else {
 
-							the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$_s_archive_content" );
+					echo '<h3 class="col-10 offset-1">This is the 404 content. Attach any design to this space by hooking into <code>h_entry_content()</code> at the child theme.</h3>';
 
-							the_widget( 'WP_Widget_Tag_Cloud' );
+				}
 
-						?>
+			?>
 
-					</section>
+		</section>
 
-					<footer>
+		<footer class="404-footer row">
 
-					</footer>
+			<?php
+
+				if ( has_action( 'h_entry_footer' ) ) {
+
+					h_entry_footer();
+
+				} else {
+
+					echo '<h3 class="col-10 offset-1">This is the 404 footer. Attach any design to this space by hooking into <code>h_entry_footer()</code> at the child theme.</h3>';
+
+				}
+
+			?>
+
+		</footer>
+
+	</article>

@@ -6,7 +6,9 @@
 
 
 
-            h_main_end(); ?>
+                h_main_end(); ?>
+
+            </div>
 
 		</main>
 

@@ -16,73 +16,81 @@
 
             ?>
 
-            <header class="<?php echo TYPESIX_CSS_CLASSES_FOR_COMMENTS_AREA_HEADER; ?>" id="comments-header">
+            <header class="row" id="comments-header">
 
-                <h2>
+                <div class="<?php echo TYPESIX_CSS_CLASSES_FOR_COMMENTS_AREA_HEADER_LINER; ?>">
 
-                    <?php
+                    <h2>
 
-                        $v_comment_count = get_comments_number();
+                        <?php
 
-                        // WPCS: XSS OK.
-                        printf(
+                            $v_comment_count = get_comments_number();
 
-                            esc_html(
+                            // WPCS: XSS OK.
+                            printf(
 
-                                _nx(
+                                esc_html(
 
-                                    'One comment on &ldquo;%2$s&rdquo;',
-                                    '%1$s comments on &ldquo;%2$s&rdquo;',
-                                    $v_comment_count,
-                                    'comments title with number of comments',
-                                    'wordpress-theme-starter-type-six'
+                                    _nx(
 
-                                )
+                                        'One comment on &ldquo;%2$s&rdquo;',
+                                        '%1$s comments on &ldquo;%2$s&rdquo;',
+                                        $v_comment_count,
+                                        'comments title with number of comments',
+                                        'wordpress-theme-starter-type-six'
 
-                            ),
+                                    )
 
-                            number_format_i18n( $v_comment_count ), '<span>' . get_the_title() . '</span>'
+                                ),
 
-                        );
+                                number_format_i18n( $v_comment_count ), '<span>' . get_the_title() . '</span>'
 
-                    ?>
+                            );
 
-                </h2>
+                        ?>
+
+                    </h2>
+
+                </div>
 
             </header>
 
-            <section class="<?php echo TYPESIX_CSS_CLASSES_FOR_COMMENTS_AREA_LIST; ?>" id="comments-list">
+            <section class="row" id="comments-list">
 
-            <?php the_comments_navigation(); ?>
+                <div class="<?php echo TYPESIX_CSS_CLASSES_FOR_COMMENTS_AREA_LIST_LINER; ?>">
 
-            <<?php echo TYPESIX_SET_COMMENTS_STYLE; ?>>
+                    <?php the_comments_navigation(); ?>
 
-                <?php
+                    <<?php echo TYPESIX_SET_COMMENTS_STYLE; ?>>
 
-                    wp_list_comments( array(
+                        <?php
 
-                        'avatar_size'      => TYPESIX_SET_COMMENTS_AVATAR_SIZE,
-                        'reply_text'       => __( 'Respond to this comment', 'wordpress-theme-starter-type-six' ),
-                        'reverse_children' => TYPESIX_SET_COMMENTS_REVERSE_CHILDREN,
-                        'style'            => TYPESIX_SET_COMMENTS_STYLE,
-                        'type'             => TYPESIX_SET_COMMENTS_TYPE,
+                            wp_list_comments( array(
 
-                    ) );
+                                'avatar_size'      => TYPESIX_SET_COMMENTS_AVATAR_SIZE,
+                                'reply_text'       => __( 'Respond to this comment', 'wordpress-theme-starter-type-six' ),
+                                'reverse_children' => TYPESIX_SET_COMMENTS_REVERSE_CHILDREN,
+                                'style'            => TYPESIX_SET_COMMENTS_STYLE,
+                                'type'             => TYPESIX_SET_COMMENTS_TYPE,
 
-                ?>
+                            ) );
 
-            </<?php echo TYPESIX_SET_COMMENTS_STYLE; ?>>
+                        ?>
 
-            <?php
+                    </<?php echo TYPESIX_SET_COMMENTS_STYLE; ?>>
 
-                the_comments_navigation();
+                    <?php
 
-                if ( ! comments_open() ) {
+                        the_comments_navigation();
 
-                    ?><p class="no-comments"><?php esc_html_e( 'Comments are closed.', 'wordpress-theme-starter-type-six' ); ?></p><?php
-                }
+                        if ( ! comments_open() ) {
 
-            ?>
+                            ?><p class="no-comments"><?php esc_html_e( 'Comments are closed.', 'wordpress-theme-starter-type-six' ); ?></p><?php
+                        }
+
+                    ?>
+
+                </div>
 
             </section>
 
@@ -92,9 +100,9 @@
 
             ?>
 
-                <header class="<?php echo TYPESIX_CSS_CLASSES_FOR_COMMENTS_AREA_HEADER; ?>" id="comments-header"></header>
+                <header class="row" id="comments-header"></header>
 
-                <section class="<?php echo TYPESIX_CSS_CLASSES_FOR_COMMENTS_AREA_LIST; ?>" id="comments-list"></section>
+                <section class="row" id="comments-list"></section>
 
 
             <?php
@@ -103,47 +111,51 @@
 
         ?>
 
-        <footer class="<?php echo TYPESIX_CSS_CLASSES_FOR_COMMENTS_AREA_FOOTER; ?>" id="comments-footer">
+        <footer class="row" id="comments-footer">
 
-            <?php
+            <div class="<?php echo TYPESIX_CSS_CLASSES_FOR_COMMENTS_AREA_FOOTER_LINER; ?>">
 
-                $aria_req      = ( $req ? " aria-required='true'" : '' );
+                <?php
 
-                $user_data     = get_userdata( get_current_user_id() );
-                $user_nicename = $user_data ? $user_data->user_nicename : 'no-one-logged-in';
+                    $aria_req      = ( $req ? " aria-required='true'" : '' );
 
-                comment_form( array(
+                    $user_data     = get_userdata( get_current_user_id() );
+                    $user_nicename = $user_data ? $user_data->user_nicename : 'no-one-logged-in';
 
-                    'cancel_reply_after'   => '</small>',
-                    'cancel_reply_before'  => '<small>',
-                    'cancel_reply_link'    => __( 'Cancel reply to comment (return to regular reply form)', 'wordpress-theme-starter-type-six' ),
-                    'class_form'           => 'comment-form',
-                    'class_submit'         => 'submit-comment-form',
-                    'comment_field'        => '<p class="comment-form-comment"><label for="comment">' . __( 'Comment', 'wordpress-theme-starter-type-six' ) . '</label><textarea id="comment" name="comment" cols="45" rows="8" aria-required="true"></textarea></p>',
-                    'comment_notes_after'  => '<p class="form-allowed-tags">' . sprintf( __( 'The following HTML tags and attributes can be used in comments: %s', 'wordpress-theme-starter-type-six' ), ' <code>' . allowed_tags() . '</code>' ) . '</p>',
-                    'comment_notes_before' => '<p>' . __( 'Your email address will not be shared.</p><p>Required fields are labeled in <strong>bold</strong>.', 'wordpress-theme-starter-type-six' ) . '</p>',
+                    comment_form( array(
 
-                    'fields'               => array(
+                        'cancel_reply_after'   => '</small>',
+                        'cancel_reply_before'  => '<small>',
+                        'cancel_reply_link'    => __( 'Cancel reply to comment (return to regular reply form)', 'wordpress-theme-starter-type-six' ),
+                        'class_form'           => 'comment-form',
+                        'class_submit'         => 'submit-comment-form',
+                        'comment_field'        => '<p class="comment-form-comment"><label for="comment">' . __( 'Comment', 'wordpress-theme-starter-type-six' ) . '</label><textarea id="comment" name="comment" cols="45" rows="8" aria-required="true"></textarea></p>',
+                        'comment_notes_after'  => '<p class="form-allowed-tags">' . sprintf( __( 'The following HTML tags and attributes can be used in comments: %s', 'wordpress-theme-starter-type-six' ), ' <code>' . allowed_tags() . '</code>' ) . '</p>',
+                        'comment_notes_before' => '<p>' . __( 'Your email address will not be shared.</p><p>Required fields are labeled in <strong>bold</strong>.', 'wordpress-theme-starter-type-six' ) . '</p>',
 
-                        'author'           => '<p class="comment-form-author"><label for="author">' . ( $req ? '<strong>' : '' ) . __( 'Name', 'wordpress-theme-starter-type-six' )  . ( $req ? '</strong>' : '' ) . '</label>' . '<input id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) . '" size="30"' . $aria_req . ' /></p>',
-                        'email'            => '<p class="comment-form-email"><label for="email">'   . ( $req ? '<strong>' : '' ) . __( 'Email', 'wordpress-theme-starter-type-six' ) . ( $req ? '</strong>' : '' ) . '</label>' . '<input id="email" name="email" type="text" value="' . esc_attr(  $commenter['comment_author_email'] ) . '" size="30"' . $aria_req . ' /></p>',
-                        'url'              => '<p class="comment-form-url"><label for="url">'       . __( 'Website', 'wordpress-theme-starter-type-six' ) . '</label>' . '<input id="url" name="url" type="text" value="' . esc_attr( $commenter['comment_author_url'] ) . '" size="30" /></p>',
+                        'fields'               => array(
 
-                    ),
+                            'author'           => '<p class="comment-form-author"><label for="author">' . ( $req ? '<strong>' : '' ) . __( 'Name', 'wordpress-theme-starter-type-six' )  . ( $req ? '</strong>' : '' ) . '</label>' . '<input id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) . '" size="30"' . $aria_req . ' /></p>',
+                            'email'            => '<p class="comment-form-email"><label for="email">'   . ( $req ? '<strong>' : '' ) . __( 'Email', 'wordpress-theme-starter-type-six' ) . ( $req ? '</strong>' : '' ) . '</label>' . '<input id="email" name="email" type="text" value="' . esc_attr(  $commenter['comment_author_email'] ) . '" size="30"' . $aria_req . ' /></p>',
+                            'url'              => '<p class="comment-form-url"><label for="url">'       . __( 'Website', 'wordpress-theme-starter-type-six' ) . '</label>' . '<input id="url" name="url" type="text" value="' . esc_attr( $commenter['comment_author_url'] ) . '" size="30" /></p>',
 
-                    'id_form'              => 'comment-form',
-                    'id_submit'            => 'submit-comment-form',
-                    'label_submit'         => __( 'Submit Comment', 'wordpress-theme-starter-type-six' ),
-                    'logged_in_as'         => '<p class="logged-in-as">' . sprintf( __( 'Currently logged in as <a href="%1$s">%2$s</a>. <a href="%3$s" title="Log out now...">Log out</a> to comment anonymously (or log in with a different account to comment as that user).', 'wordpress-theme-starter-type-six' ), admin_url( 'profile.php' ), $user_nicename, wp_logout_url( apply_filters( 'the_permalink', get_permalink( ) ) ) ) . '</p>',
-                    'must_log_in'          => '<p class="must-log-in">' .  sprintf( __( 'You must be <a href="%s">signed in</a> to comment.', 'wordpress-theme-starter-type-six' ), wp_login_url( apply_filters( 'the_permalink', get_permalink( ) ) ) ) . '</p>',
-                    'title_reply'          => __( 'Your thoughts are welcome!', 'wordpress-theme-starter-type-six' ),
-                    'title_reply_after'    => '</h3>',
-                    'title_reply_before'   => '<h3 id="reply-title" class="comment-reply-title">',
-                    'title_reply_to'       => __( 'Reply to %s&rsquo;s comment', 'wordpress-theme-starter-type-six' ),
+                        ),
 
-                ) );
+                        'id_form'              => 'comment-form',
+                        'id_submit'            => 'submit-comment-form',
+                        'label_submit'         => __( 'Submit Comment', 'wordpress-theme-starter-type-six' ),
+                        'logged_in_as'         => '<p class="logged-in-as">' . sprintf( __( 'Currently logged in as <a href="%1$s">%2$s</a>. <a href="%3$s" title="Log out now...">Log out</a> to comment anonymously (or log in with a different account to comment as that user).', 'wordpress-theme-starter-type-six' ), admin_url( 'profile.php' ), $user_nicename, wp_logout_url( apply_filters( 'the_permalink', get_permalink( ) ) ) ) . '</p>',
+                        'must_log_in'          => '<p class="must-log-in">' .  sprintf( __( 'You must be <a href="%s">signed in</a> to comment.', 'wordpress-theme-starter-type-six' ), wp_login_url( apply_filters( 'the_permalink', get_permalink( ) ) ) ) . '</p>',
+                        'title_reply'          => __( 'Your thoughts are welcome!', 'wordpress-theme-starter-type-six' ),
+                        'title_reply_after'    => '</h3>',
+                        'title_reply_before'   => '<h3 id="reply-title" class="comment-reply-title">',
+                        'title_reply_to'       => __( 'Reply to %s&rsquo;s comment', 'wordpress-theme-starter-type-six' ),
 
-            ?>
+                    ) );
+
+                ?>
+
+            </div>
 
         </footer>
 

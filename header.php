@@ -41,4 +41,6 @@
 
 		<main class="<?php echo TYPESIX_CSS_CLASSES_FOR_MAIN; ?>">
 
-			<?php h_main_begin();
+			<div class="row">
+
+				<?php h_main_begin();
