@@ -8,7 +8,7 @@
 
 ?>
 
-<div class="<?php echo TYPESIX_CSS_CLASSES_FOR_COMMENTS_AREA; ?>" id="comments-area">
+<div class="<?php echo TYPESIX_CSS_CLASSES_FOR_COMMENTS; ?>" id="comments-area">
 
     <?php
 
@@ -18,7 +18,7 @@
 
             <header class="row" id="comments-header">
 
-                <div class="<?php echo TYPESIX_CSS_CLASSES_FOR_COMMENTS_AREA_HEADER_LINER; ?>">
+                <div class="<?php echo TYPESIX_CSS_CLASSES_FOR_COMMENTS_HEADER; ?>">
 
                     <h2>
 
@@ -57,7 +57,7 @@
 
             <section class="row" id="comments-list">
 
-                <div class="<?php echo TYPESIX_CSS_CLASSES_FOR_COMMENTS_AREA_LIST_LINER; ?>">
+                <div class="<?php echo TYPESIX_CSS_CLASSES_FOR_COMMENTS_LIST; ?>">
 
                     <?php the_comments_navigation(); ?>
 
@@ -113,7 +113,7 @@
 
         <footer class="row" id="comments-footer">
 
-            <div class="<?php echo TYPESIX_CSS_CLASSES_FOR_COMMENTS_AREA_FOOTER_LINER; ?>">
+            <div class="<?php echo TYPESIX_CSS_CLASSES_FOR_COMMENTS_FOOTER; ?>">
 
                 <?php
 
