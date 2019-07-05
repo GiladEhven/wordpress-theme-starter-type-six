@@ -6,6 +6,8 @@
 
 
 
+    echo '<div class="col-12">';
+
     if ( is_search() ) {
 
 		the_posts_pagination( array(
@@ -29,3 +31,5 @@
 		) );
 
     }
+
+	echo '</div>';
