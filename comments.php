@@ -6,19 +6,27 @@
 
     if ( post_password_required() ) return;
 
+    h_comments_before();
+
 ?>
 
 <div class="<?php echo TYPESIX_CSS_CLASSES_FOR_COMMENTS; ?>" id="comments-area">
 
     <?php
 
+        h_comments_begin();
+
         if ( have_comments() ) {
+
+            h_comments_if_begin();
 
             ?>
 
             <header class="row" id="comments-header">
 
                 <div class="<?php echo TYPESIX_CSS_CLASSES_FOR_COMMENTS_HEADER; ?>">
+
+                    <?php h_comments_header_begin(); ?>
 
                     <h2>
 
@@ -51,6 +59,8 @@
 
                     </h2>
 
+                    <?php h_comments_header_end(); ?>
+
                 </div>
 
             </header>
@@ -58,6 +68,8 @@
             <section class="row" id="comments-list">
 
                 <div class="<?php echo TYPESIX_CSS_CLASSES_FOR_COMMENTS_LIST; ?>">
+
+                    <?php h_comments_list_begin(); ?>
 
                     <?php the_comments_navigation(); ?>
 
@@ -90,22 +102,30 @@
 
                     ?>
 
+                    <?php h_comments_list_end(); ?>
+
                 </div>
 
             </section>
 
             <?php
 
+            h_comments_if_end();
+
         } else {
+
+            h_comments_else_begin();
 
             ?>
 
-                <header class="row" id="comments-header"></header>
+                <header class="row" id="comments-header"><?php h_comments_else_header(); ?></header>
 
-                <section class="row" id="comments-list"></section>
+                <section class="row" id="comments-list"><?php h_comments_else_section(); ?></section>
 
 
             <?php
+
+            h_comments_else_end();
 
         }
 
