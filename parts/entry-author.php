@@ -16,6 +16,8 @@
 
 	<article id="author-<?php echo $current_author->user_nicename; ?>" <?php post_class( 'col-12' ); ?>>
 
+		<?php h_entry_article_begin(); ?>
+
 		<header class="author-header row">
 
 			<?php
@@ -33,6 +35,8 @@
 			?>
 
 		</header>
+
+		<?php h_entry_article_content_before(); ?>
 
 		<section class="author-content row">
 
@@ -52,6 +56,8 @@
 
 		</section>
 
+		<?php h_entry_article_content_after(); ?>
+
 		<footer class="author-footer row">
 
 			<?php
@@ -69,5 +75,7 @@
 			?>
 
 		</footer>
+
+		<?php h_entry_article_end(); ?>
 
 	</article>

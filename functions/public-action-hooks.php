@@ -33,6 +33,15 @@
     function h_loop_if_end()                     { do_action( 'h_loop_if_end' );                     }
     function h_loop_else_core()                  { do_action( 'h_loop_else_core' );                  }
 
+    function h_entry_header()                    { do_action( 'h_entry_header' );                    }
+    function h_entry_content()                   { do_action( 'h_entry_content' );                   }
+    function h_entry_footer()                    { do_action( 'h_entry_footer' );                    }
+
+    function h_entry_article_begin()             { do_action( 'h_entry_article_begin' );             }
+    function h_entry_article_content_before()    { do_action( 'h_entry_article_content_before' );    }
+    function h_entry_article_content_after()     { do_action( 'h_entry_article_content_after' );     }
+    function h_entry_article_end()               { do_action( 'h_entry_article_end' );               }
+
     function h_comments_before()                 { do_action( 'h_comments_before' );                 }
     function h_comments_begin()                  { do_action( 'h_comments_begin' );                  }
     function h_comments_if_begin()               { do_action( 'h_comments_if_begin' );               }
@@ -45,10 +54,6 @@
     function h_comments_else_header()            { do_action( 'h_comments_else_header' );            }
     function h_comments_else_section()           { do_action( 'h_comments_else_section' );           }
     function h_comments_else_end()               { do_action( 'h_comments_else_end' );               }
-
-    function h_entry_header()                    { do_action( 'h_entry_header' );                    }
-    function h_entry_content()                   { do_action( 'h_entry_content' );                   }
-    function h_entry_footer()                    { do_action( 'h_entry_footer' );                    }
 
     function h_main_end()                        { do_action( 'h_main_end' );                        }
     function h_main_after()                      { do_action( 'h_main_after' );                      }

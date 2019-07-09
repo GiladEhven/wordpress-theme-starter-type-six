@@ -8,6 +8,8 @@
 
 	<article id="post-<?php the_ID(); ?>" <?php post_class( 'col-12' ); ?>>
 
+		<?php h_entry_article_begin(); ?>
+
 		<header class="post-header row">
 
 			<?php
@@ -25,6 +27,8 @@
 			?>
 
 		</header>
+
+		<?php h_entry_article_content_before(); ?>
 
 		<section class="post-content row">
 
@@ -44,6 +48,8 @@
 
 		</section>
 
+		<?php h_entry_article_content_after(); ?>
+
 		<footer class="post-footer row">
 
 			<?php
@@ -61,5 +67,7 @@
 			?>
 
 		</footer>
+
+		<?php h_entry_article_end(); ?>
 
 	</article>
