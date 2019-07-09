@@ -12,6 +12,13 @@ body > main.container-fluid {
 	margin: 2px auto;
 }
 
+div.h {
+	background-color: #a5e89b;
+	border: solid 1px #3d9930;
+	margin: 2px;
+	width: calc( 100% - 4px );
+}
+
 h3.col-10.offset-1 {
 	background-color: #ffe0a6;
 	margin-top: 8px;
