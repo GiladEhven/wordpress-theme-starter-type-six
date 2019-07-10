@@ -103,6 +103,7 @@
 
         require_once( get_template_directory()         . '/functions/public-action-hooks.php' );
         require_once( get_template_directory()         . '/functions/public-cleanup.php' );
+        require_once( get_template_directory()         . '/functions/public-get.php' );
         require_once( get_template_directory()         . '/functions/public-resources.php' );
         require_once( get_template_directory()         . '/functions/public-template-tags.php' );
 
