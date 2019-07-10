@@ -12,15 +12,52 @@ body > main.container-fluid {
 	margin: 2px auto;
 }
 
-div.h {
+.h-in-common,
+.h-in-container,
+.h-in-nothing,
+.h-in-row {
+
+}
+
+.h-in-column {
+	background-color: #a5e89b;
+	border: solid 1px #3d9930;
+	margin-top: 2px;
+}
+
+.h-in-common {
+	__background-color: transparent;
+	__border-color: transparent;
+}
+
+.h-in-container {
+	__margin: auto;
+	__width: auto;
+}
+
+.col-12.h,
+.h-in-nothing {
 	background-color: #a5e89b;
 	border: solid 1px #3d9930;
 	margin: 2px;
 	width: calc( 100% - 4px );
 }
 
+.h-in-row {
+
+}
+
+
+
+
+
+
+
+.h-common-content,
+
 h3.col-10.offset-1 {
 	background-color: #ffe0a6;
+	border: solid 2px orange !important;
 	margin-top: 8px;
 }
 
