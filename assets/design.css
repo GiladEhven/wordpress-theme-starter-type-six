@@ -18,10 +18,6 @@ body > main.container-fluid {
 	margin: 2px auto;
 }
 
-code {
-	white-space: nowrap;
-}
-
 h6.code {
 	font-family: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
 	margin: 12px;
@@ -41,14 +37,14 @@ h6.code {
 	width: calc( 100% - 4px );
 }
 
-.h-in-row {
-
-}
-
 .h-common-content {
 	background-color: #ffe0a6;
 	border: solid 2px orange !important;
 	margin-top: 8px;
+}
+
+.h-common-content code {
+	white-space: nowrap;
 }
 
 .col-1,
