@@ -7,32 +7,26 @@ body > main.container-fluid {
 	border: double 5px #ddd;
 }
 
+body > footer > .row,
+body > header > .row {
+	background-color: #ddd;
+	height: 160px;
+}
+
 body > main.container,
 body > main.container-fluid {
 	margin: 2px auto;
 }
 
-.h-in-common,
-.h-in-container,
-.h-in-nothing,
-.h-in-row {
-
+h6.code {
+	font-family: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+	margin: 12px;
 }
 
 .h-in-column {
 	background-color: #a5e89b;
 	border: solid 1px #3d9930;
 	margin-top: 2px;
-}
-
-.h-in-common {
-	__background-color: transparent;
-	__border-color: transparent;
-}
-
-.h-in-container {
-	__margin: auto;
-	__width: auto;
 }
 
 .col-12.h,
@@ -46,12 +40,6 @@ body > main.container-fluid {
 .h-in-row {
 
 }
-
-
-
-
-
-
 
 .h-common-content,
 
@@ -80,6 +68,7 @@ h3.col-10.offset-1 {
 	border: solid 2px red;
 	margin: 2px;
 	max-width: calc( 100% - 4px );
+	padding-bottom: 2px;
 }
 
 .row {

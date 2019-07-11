@@ -5,13 +5,3 @@
  *                                                               *
  *                                                               *
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
-
-body > footer > .row,
-body > header > .row {
-	background-color: #ddd;
-	height: 160px;
-}
-
-main {
-	min-height: 80vh;
-}
