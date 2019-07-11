@@ -18,6 +18,10 @@ body > main.container-fluid {
 	margin: 2px auto;
 }
 
+code {
+	white-space: nowrap;
+}
+
 h6.code {
 	font-family: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
 	margin: 12px;

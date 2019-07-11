@@ -6,7 +6,7 @@
 
 
 
-    $common_entry_header = '<div class="col-12 h-common-content"><h3>This design/content is hooked into this space at <code>h_entry_header()</code> on <strong>all templates that support the <code>h_entry_header()</code> theme action hook</strong>, because it is implemented globally, rather than within a particular template, and without any template type detection conditional. Override in child theme with <small><code>is_front_page()</code></small>.</h3></div>';
+    $common_entry_header = '<div class="col-12 h-common-content"><h3>This design/content is hooked into this space at <code>h_entry_header()</code> on <strong>all templates that support the <code>h_entry_header()</code> theme action hook</strong>, because it is implemented globally, rather than within a particular template, and without any template type detection conditional. Override in child theme with <small><code>h_entry_header()</code></small>, and add template type conditionals as required.</h3></div>';
 
     $in_container_begin = '<div class="row h"><div class="col-12"><div class="h-in-container"><h6 class="code">';
     $in_container_end   = '</h6></div></div></div>';
