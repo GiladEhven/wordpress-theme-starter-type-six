@@ -33,14 +33,51 @@
     function h_loop_if_end()                     { do_action( 'h_loop_if_end' );                     }
     function h_loop_else_core()                  { do_action( 'h_loop_else_core' );                  }
 
-    function h_entry_header()                    { do_action( 'h_entry_header' );                    }
-    function h_entry_content()                   { do_action( 'h_entry_content' );                   }
-    function h_entry_footer()                    { do_action( 'h_entry_footer' );                    }
+
 
     function h_entry_article_begin()             { do_action( 'h_entry_article_begin' );             }
     function h_entry_article_content_before()    { do_action( 'h_entry_article_content_before' );    }
     function h_entry_article_content_after()     { do_action( 'h_entry_article_content_after' );     }
     function h_entry_article_end()               { do_action( 'h_entry_article_end' );               }
+
+    function h_entry_header()                    { do_action( 'h_entry_header' );                    }
+    function h_entry_content()                   { do_action( 'h_entry_content' );                   }
+    function h_entry_footer()                    { do_action( 'h_entry_footer' );                    }
+
+
+
+    function h_audio_entry_article_begin()       { do_action( 'h_audio_entry_article_begin' );       }
+    function h_audio_entry_content_before()      { do_action( 'h_audio_entry_content_before' );      }
+    function h_audio_entry_content_after()       { do_action( 'h_audio_entry_content_after' );       }
+    function h_audio_entry_article_end()         { do_action( 'h_audio_entry_article_end' );         }
+
+    function h_audio_entry_header()              { do_action( 'h_audio_entry_header' );              }
+    function h_audio_entry_content()             { do_action( 'h_audio_entry_content' );             }
+    function h_audio_entry_footer()              { do_action( 'h_audio_entry_footer' );              }
+
+
+
+    function h_image_entry_article_begin()       { do_action( 'h_image_entry_article_begin' );       }
+    function h_image_entry_content_before()      { do_action( 'h_image_entry_content_before' );      }
+    function h_image_entry_content_after()       { do_action( 'h_image_entry_content_after' );       }
+    function h_image_entry_article_end()         { do_action( 'h_image_entry_article_end' );         }
+
+    function h_image_entry_header()              { do_action( 'h_image_entry_header' );              }
+    function h_image_entry_content()             { do_action( 'h_image_entry_content' );             }
+    function h_image_entry_footer()              { do_action( 'h_image_entry_footer' );              }
+
+
+
+    function h_video_entry_article_begin()       { do_action( 'h_video_entry_article_begin' );       }
+    function h_video_entry_content_before()      { do_action( 'h_video_entry_content_before' );      }
+    function h_video_entry_content_after()       { do_action( 'h_video_entry_content_after' );       }
+    function h_video_entry_article_end()         { do_action( 'h_video_entry_article_end' );         }
+
+    function h_video_entry_header()              { do_action( 'h_video_entry_header' );              }
+    function h_video_entry_content()             { do_action( 'h_video_entry_content' );             }
+    function h_video_entry_footer()              { do_action( 'h_video_entry_footer' );              }
+
+
 
     function h_comments_before()                 { do_action( 'h_comments_before' );                 }
     function h_comments_begin()                  { do_action( 'h_comments_begin' );                  }
