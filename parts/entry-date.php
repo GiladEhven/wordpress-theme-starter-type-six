@@ -20,7 +20,9 @@
 
 				} else {
 
-					echo '<h3 class="col-10 offset-1">This is the date header. Attach any design to this space by hooking into <code>h_entry_header()</code> at the child theme.</h3>';
+					// Does in not display in "Design Mode" by default, as [modes/public-action-hooks.php] includes a sitewide hookable for this space (comment out the [h_entry_header] test/demo in [modes/public-action-hooks.php] to see template-specific hookables like the below at this location)
+
+					echo '<div class="col-12 h-common-content"><h4>This design/content is hooked into this space at <strong><code>h_entry_header()</code></strong> on Date archive pages only (within <small><code>entry-date.php</code></small>). Override in child theme with <small><code>is_date()</code></small>, <small><code>is_time()</code></small>, <small><code>is_day()</code></small>, <small><code>is_month()</code></small>, and <small><code>is_year()</code></small>.</h4></div>';
 
 				}
 
@@ -40,7 +42,7 @@
 
 				} else {
 
-					echo '<h3 class="col-10 offset-1">This is the date content. Attach any design to this space by hooking into <code>h_entry_content()</code> at the child theme.</h3>';
+					echo '<div class="col-12 h-common-content"><h4>This design/content is hooked into this space at <strong><code>h_entry_content()</code></strong> on Date archive pages only (within <small><code>entry-date.php</code></small>). Override in child theme with <small><code>is_date()</code></small>, <small><code>is_time()</code></small>, <small><code>is_day()</code></small>, <small><code>is_month()</code></small>, and <small><code>is_year()</code></small>.</h4></div>';
 
 				}
 
@@ -60,7 +62,7 @@
 
 				} else {
 
-					echo '<h3 class="col-10 offset-1">This is the date footer. Attach any design to this space by hooking into <code>h_entry_footer()</code> at the child theme.</h3>';
+					echo '<div class="col-12 h-common-content"><h4>This design/content is hooked into this space at <strong><code>h_entry_footer()</code></strong> on Date archive pages only (within <small><code>entry-date.php</code></small>). Override in child theme with <small><code>is_date()</code></small>, <small><code>is_time()</code></small>, <small><code>is_day()</code></small>, <small><code>is_month()</code></small>, and <small><code>is_year()</code></small>.</h4></div>';
 
 				}
 
