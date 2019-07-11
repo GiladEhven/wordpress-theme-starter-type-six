@@ -45,9 +45,7 @@ h6.code {
 
 }
 
-.h-common-content,
-
-h3.col-10.offset-1 {
+.h-common-content {
 	background-color: #ffe0a6;
 	border: solid 2px orange !important;
 	margin-top: 8px;
@@ -84,3 +82,9 @@ h3.col-10.offset-1 {
 .row > div > .row {
 	border-color: #777;
 }
+
+.row.d > .col-12 {
+	background-color: #a5e89b;
+	border: solid 1px #3d9930;
+}
+

@@ -14,6 +14,9 @@
     $in_row_begin       = '<div class="col-12 h"><div class="h-in-row"><h6 class="code">';
     $in_row_end         = '</h6></div></div>';
 
+    $in_deep_row_begin  = '<div class="row d"><div class="col-12"><div class="h-in-deep-row"><h6 class="code">';
+    $in_deep_row_end    = '</h6></div></div></div>';
+
     $in_column_begin    = '<div class="h-in-column"><h6 class="code">';
     $in_column_end      = '</h6></div>';
 
@@ -50,7 +53,7 @@
 
 	if ( ! has_action( 'h_loop_posts_navigation_after' ) )     add_action( 'h_loop_posts_navigation_after',     function() use( $in_nothing_begin,   $in_nothing_end )   { echo $in_nothing_begin   . 'h_loop_posts_navigation_after'  . $in_nothing_end; });
 
-	if ( ! has_action( 'h_loop_comments_before' ) )            add_action( 'h_loop_comments_before',            function() use( $in_nothing_begin,   $in_nothing_end )   { echo $in_nothing_begin   . 'h_loop_comments_before'         . $in_nothing_end; });
+	if ( ! has_action( 'h_loop_comments_before' ) )            add_action( 'h_loop_comments_before',            function() use( $in_row_begin,       $in_row_end )       { echo $in_row_begin       . 'h_loop_comments_before'         . $in_row_end; });
 
 	if ( ! has_action( 'h_loop_comments_after' ) )             add_action( 'h_loop_comments_after',             function() use( $in_nothing_begin,   $in_nothing_end )   { echo $in_nothing_begin   . 'h_loop_comments_after'          . $in_nothing_end; });
 
@@ -70,21 +73,21 @@
 
 	if ( ! has_action( 'h_entry_article_end' ) )               add_action( 'h_entry_article_end',               function() use( $in_column_begin,    $in_column_end )    { echo $in_column_begin    . 'h_entry_article_end'            . $in_column_end; });
 
-	if ( ! has_action( 'h_comments_before' ) )                 add_action( 'h_comments_before',                 function() { echo '<div class="h-in-nothing">h_comments_before</div>'; });
+	if ( ! has_action( 'h_comments_before' ) )                 add_action( 'h_comments_before',                 function() use( $in_row_begin,       $in_row_end )       { echo $in_row_begin       . 'h_comments_before'              . $in_row_end; });
 
-	if ( ! has_action( 'h_comments_begin' ) )                  add_action( 'h_comments_begin',                  function() { echo '<div class="h-in-nothing">h_comments_begin</div>'; });
+	if ( ! has_action( 'h_comments_begin' ) )                  add_action( 'h_comments_begin',                  function() use( $in_deep_row_begin,  $in_deep_row_end )  { echo $in_deep_row_begin  . 'h_comments_begin'               . $in_deep_row_end; });
 
-	if ( ! has_action( 'h_comments_if_begin' ) )               add_action( 'h_comments_if_begin',               function() { echo '<div class="h-in-nothing">h_comments_if_begin</div>'; });
+	if ( ! has_action( 'h_comments_if_begin' ) )               add_action( 'h_comments_if_begin',               function() use( $in_deep_row_begin,  $in_deep_row_end )  { echo $in_deep_row_begin  . 'h_comments_if_begin'            . $in_deep_row_end; });
 
-	if ( ! has_action( 'h_comments_header_begin' ) )           add_action( 'h_comments_header_begin',           function() { echo '<div class="h-in-nothing">h_comments_header_begin</div>'; });
+	if ( ! has_action( 'h_comments_header_begin' ) )           add_action( 'h_comments_header_begin',           function() use( $in_deep_row_begin,  $in_deep_row_end )  { echo $in_deep_row_begin  . 'h_comments_header_begin'        . $in_deep_row_end; });
 
-	if ( ! has_action( 'h_comments_header_end' ) )             add_action( 'h_comments_header_end',             function() { echo '<div class="h-in-nothing">h_comments_header_end</div>'; });
+	if ( ! has_action( 'h_comments_header_end' ) )             add_action( 'h_comments_header_end',             function() use( $in_deep_row_begin,  $in_deep_row_end )  { echo $in_deep_row_begin  . 'h_comments_header_end'          . $in_deep_row_end; });
 
-	if ( ! has_action( 'h_comments_list_begin' ) )             add_action( 'h_comments_list_begin',             function() { echo '<div class="h-in-nothing">h_comments_list_begin</div>'; });
+	if ( ! has_action( 'h_comments_list_begin' ) )             add_action( 'h_comments_list_begin',             function() use( $in_deep_row_begin,  $in_deep_row_end )  { echo $in_deep_row_begin  . 'h_comments_list_begin'          . $in_deep_row_end; });
 
-	if ( ! has_action( 'h_comments_list_end' ) )               add_action( 'h_comments_list_end',               function() { echo '<div class="h-in-nothing">h_comments_list_end</div>'; });
+	if ( ! has_action( 'h_comments_list_end' ) )               add_action( 'h_comments_list_end',               function() use( $in_deep_row_begin,  $in_deep_row_end )  { echo $in_deep_row_begin  . 'h_comments_list_end'            . $in_deep_row_end; });
 
-	if ( ! has_action( 'h_comments_if_end' ) )                 add_action( 'h_comments_if_end',                 function() { echo '<div class="h-in-nothing">h_comments_if_end</div>'; });
+	if ( ! has_action( 'h_comments_if_end' ) )                 add_action( 'h_comments_if_end',                 function() use( $in_deep_row_begin,  $in_deep_row_end )  { echo $in_deep_row_begin  . 'h_comments_if_end'              . $in_deep_row_end; });
 
 	if ( ! has_action( 'h_comments_else_begin' ) )             add_action( 'h_comments_else_begin',             function() { echo '<div class="h-in-nothing">h_comments_else_begin</div>'; });
 
