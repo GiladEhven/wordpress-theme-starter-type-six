@@ -68,6 +68,17 @@
 
 
 
+    function h_text_entry_article_begin()        { do_action( 'h_text_entry_article_begin' );        }
+    function h_text_entry_content_before()       { do_action( 'h_text_entry_content_before' );       }
+    function h_text_entry_content_after()        { do_action( 'h_text_entry_content_after' );        }
+    function h_text_entry_article_end()          { do_action( 'h_text_entry_article_end' );          }
+
+    function h_text_entry_header()               { do_action( 'h_text_entry_header' );               }
+    function h_text_entry_content()              { do_action( 'h_text_entry_content' );              }
+    function h_text_entry_footer()               { do_action( 'h_text_entry_footer' );               }
+
+
+
     function h_video_entry_article_begin()       { do_action( 'h_video_entry_article_begin' );       }
     function h_video_entry_content_before()      { do_action( 'h_video_entry_content_before' );      }
     function h_video_entry_content_after()       { do_action( 'h_video_entry_content_after' );       }
