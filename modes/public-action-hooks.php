@@ -89,13 +89,13 @@
 
 	if ( ! has_action( 'h_comments_if_end' ) )                 add_action( 'h_comments_if_end',                 function() use( $in_deep_row_begin,  $in_deep_row_end )  { echo $in_deep_row_begin  . 'h_comments_if_end'              . $in_deep_row_end; });
 
-	if ( ! has_action( 'h_comments_else_begin' ) )             add_action( 'h_comments_else_begin',             function() { echo '<div class="h-in-nothing">h_comments_else_begin</div>'; });
+	if ( ! has_action( 'h_comments_else_begin' ) )             add_action( 'h_comments_else_begin',             function() use( $in_deep_row_begin,  $in_deep_row_end )  { echo $in_deep_row_begin  . 'h_comments_else_begin'          . $in_deep_row_end; });
 
-	if ( ! has_action( 'h_comments_else_header' ) )            add_action( 'h_comments_else_header',            function() { echo '<div class="h-in-nothing">h_comments_else_header</div>'; });
+	if ( ! has_action( 'h_comments_else_header' ) )            add_action( 'h_comments_else_header',            function() use( $in_row_begin,       $in_row_end )       { echo $in_row_begin       . 'h_comments_else_header'         . $in_row_end; });
 
-	if ( ! has_action( 'h_comments_else_section' ) )           add_action( 'h_comments_else_section',           function() { echo '<div class="h-in-nothing">h_comments_else_section</div>'; });
+	if ( ! has_action( 'h_comments_else_section' ) )           add_action( 'h_comments_else_section',           function() use( $in_row_begin,       $in_row_end )       { echo $in_row_begin       . 'h_comments_else_section'        . $in_row_end; });
 
-	if ( ! has_action( 'h_comments_else_end' ) )               add_action( 'h_comments_else_end',               function() { echo '<div class="h-in-nothing">h_comments_else_end</div>'; });
+	if ( ! has_action( 'h_comments_else_end' ) )               add_action( 'h_comments_else_end',               function() use( $in_deep_row_begin,  $in_deep_row_end )  { echo $in_deep_row_begin  . 'h_comments_else_end'            . $in_deep_row_end; });
 
 	if ( ! has_action( 'h_main_end' ) )                        add_action( 'h_main_end',                        function() use( $in_row_begin,       $in_row_end )       { echo $in_row_begin       . 'h_main_end'                     . $in_row_end; });
 
