@@ -73,6 +73,14 @@
 
 	if ( ! has_action( 'h_entry_article_end' ) )               add_action( 'h_entry_article_end',               function() use( $in_column_begin,    $in_column_end )    { echo $in_column_begin    . 'h_entry_article_end'            . $in_column_end; });
 
+	if ( ! has_action( 'h_nav_post_begin' ) )                  add_action( 'h_nav_post_begin',                  function()  { echo '<div class="row"><div class="col-4"><div class="h-in-column"><h6 class="code">h_nav_post_begin</h6></div>'; });
+
+	if ( ! has_action( 'h_nav_post_paginator_before' ) )       add_action( 'h_nav_post_paginator_before',       function()  { echo '</div><div class="col-4 text-center"><div class="h-in-column"><h6 class="code">h_nav_post_paginator_before</h6></div>'; });
+
+	if ( ! has_action( 'h_nav_post_paginator_after' ) )        add_action( 'h_nav_post_paginator_after',        function()  { echo '<div class="h-in-column"><h6 class="code">h_nav_post_paginator_after</h6></div></div><div class="col-4 text-right"><div class="h-in-column"><h6 class="code">h_nav_post_end</h6></div>'; });
+
+	if ( ! has_action( 'h_nav_post_end' ) )                    add_action( 'h_nav_post_end',                    function()  { echo '</div></div>'; });
+
 	if ( ! has_action( 'h_comments_before' ) )                 add_action( 'h_comments_before',                 function() use( $in_row_begin,       $in_row_end )       { echo $in_row_begin       . 'h_comments_before'              . $in_row_end; });
 
 	if ( ! has_action( 'h_comments_begin' ) )                  add_action( 'h_comments_begin',                  function() use( $in_deep_row_begin,  $in_deep_row_end )  { echo $in_deep_row_begin  . 'h_comments_begin'               . $in_deep_row_end; });

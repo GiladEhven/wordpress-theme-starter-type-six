@@ -8,7 +8,11 @@
 
     echo '<div class="' . TYPESIX_CSS_CLASSES_FOR_NAV_POST . '">';
 
+    h_nav_post_begin();
+
 	previous_post_link( '<span id="post-nav-previous">%link</span>' );
+
+	h_nav_post_paginator_before();
 
 	wp_link_pages( array(
 
@@ -24,6 +28,10 @@
 
 	) );
 
+	h_nav_post_paginator_after();
+
 	next_post_link( '<span id="post-nav-next">%link</span>' );
+
+	h_nav_post_end();
 
 	echo '</div>';

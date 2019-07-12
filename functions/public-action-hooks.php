@@ -79,6 +79,13 @@
 
 
 
+    function h_nav_post_begin()                  { do_action( 'h_nav_post_begin' );                  }
+    function h_nav_post_paginator_before()       { do_action( 'h_nav_post_paginator_before' );       }
+    function h_nav_post_paginator_after()        { do_action( 'h_nav_post_paginator_after' );        }
+    function h_nav_post_end()                    { do_action( 'h_nav_post_end' );                    }
+
+
+
     function h_comments_before()                 { do_action( 'h_comments_before' );                 }
     function h_comments_begin()                  { do_action( 'h_comments_begin' );                  }
     function h_comments_if_begin()               { do_action( 'h_comments_if_begin' );               }
