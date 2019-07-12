@@ -45,17 +45,17 @@
 
 	if ( ! has_action( 'h_loop_entry_after' ) )                add_action( 'h_loop_entry_after',                function() use( $in_row_begin,       $in_row_end )       { echo $in_row_begin       . 'h_loop_entry_after'             . $in_row_end; });
 
-	if ( ! has_action( 'h_loop_post_navigation_before' ) )     add_action( 'h_loop_post_navigation_before',     function() use( $in_nothing_begin,   $in_nothing_end )   { echo $in_nothing_begin   . 'h_loop_post_navigation_before'  . $in_nothing_end; });
+	if ( ! has_action( 'h_loop_post_navigation_before' ) )     add_action( 'h_loop_post_navigation_before',     function() use( $in_row_begin,       $in_row_end )       { echo $in_row_begin       . 'h_loop_post_navigation_before'  . $in_row_end; });
 
-	if ( ! has_action( 'h_loop_post_navigation_after' ) )      add_action( 'h_loop_post_navigation_after',      function() use( $in_nothing_begin,   $in_nothing_end )   { echo $in_nothing_begin   . 'h_loop_post_navigation_after'   . $in_nothing_end; });
+	if ( ! has_action( 'h_loop_post_navigation_after' ) )      add_action( 'h_loop_post_navigation_after',      function() use( $in_row_begin,       $in_row_end )       { echo $in_row_begin       . 'h_loop_post_navigation_after'   . $in_row_end; });
 
-	if ( ! has_action( 'h_loop_posts_navigation_before' ) )    add_action( 'h_loop_posts_navigation_before',    function() use( $in_nothing_begin,   $in_nothing_end )   { echo $in_nothing_begin   . 'h_loop_posts_navigation_before' . $in_nothing_end; });
+	if ( ! has_action( 'h_loop_posts_navigation_before' ) )    add_action( 'h_loop_posts_navigation_before',    function() use( $in_row_begin,       $in_row_end )       { echo $in_row_begin       . 'h_loop_posts_navigation_before' . $in_row_end; });
 
-	if ( ! has_action( 'h_loop_posts_navigation_after' ) )     add_action( 'h_loop_posts_navigation_after',     function() use( $in_nothing_begin,   $in_nothing_end )   { echo $in_nothing_begin   . 'h_loop_posts_navigation_after'  . $in_nothing_end; });
+	if ( ! has_action( 'h_loop_posts_navigation_after' ) )     add_action( 'h_loop_posts_navigation_after',     function() use( $in_row_begin,       $in_row_end )       { echo $in_row_begin       . 'h_loop_posts_navigation_after'  . $in_row_end; });
 
 	if ( ! has_action( 'h_loop_comments_before' ) )            add_action( 'h_loop_comments_before',            function() use( $in_row_begin,       $in_row_end )       { echo $in_row_begin       . 'h_loop_comments_before'         . $in_row_end; });
 
-	if ( ! has_action( 'h_loop_comments_after' ) )             add_action( 'h_loop_comments_after',             function() use( $in_nothing_begin,   $in_nothing_end )   { echo $in_nothing_begin   . 'h_loop_comments_after'          . $in_nothing_end; });
+	if ( ! has_action( 'h_loop_comments_after' ) )             add_action( 'h_loop_comments_after',             function() use( $in_row_begin,       $in_row_end )       { echo $in_row_begin       . 'h_loop_comments_after'          . $in_row_end; });
 
 	if ( ! has_action( 'h_loop_while_end' ) )                  add_action( 'h_loop_while_end',                  function() use( $in_row_begin,       $in_row_end )       { echo $in_row_begin       . 'h_loop_while_end'               . $in_row_end; });
 
