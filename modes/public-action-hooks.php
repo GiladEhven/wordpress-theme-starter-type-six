@@ -23,6 +23,9 @@
     $in_nothing_begin   = '<div class="h-in-nothing"><h6 class="code">';
     $in_nothing_end     = '</h6></div>';
 
+    $in_wp_begin        = '<div class="wp-in-wp"><h6 class="code">';
+    $in_wp_end          = '</h6></div>';
+
 
 
 	if ( ! has_action( 'h_body_begin' ) )                      add_action( 'h_body_begin',                      function() use( $in_nothing_begin,   $in_nothing_end )   { echo $in_nothing_begin   . 'h_body_begin'                   . $in_nothing_end; });
@@ -112,3 +115,33 @@
 	if ( ! has_action( 'h_body_footer' ) )                     add_action( 'h_body_footer',                     function() use( $in_container_begin, $in_container_end ) { echo $in_container_begin . 'h_body_footer'                  . $in_container_end; });
 
 	if ( ! has_action( 'h_body_end' ) )                        add_action( 'h_body_end',                        function() use( $in_nothing_begin,   $in_nothing_end )   { echo $in_nothing_begin   . 'h_body_end'                     . $in_nothing_end; });
+
+	// COMMENTS FORM + LOGGED IN:
+
+	if ( ! has_action( 'comment_form_logged_in_after' ) )      add_action( 'comment_form_logged_in_after',      function() use( $in_wp_begin,        $in_wp_end )        { echo $in_wp_begin        . 'comment_form_logged_in_after'   . $in_wp_end; });
+
+    // COMMENTS FORM + LOGGED OUT:
+
+	if ( ! has_action( 'comment_form_after_fields' ) )         add_action( 'comment_form_after_fields',         function() use( $in_wp_begin,        $in_wp_end )        { echo $in_wp_begin        . 'comment_form_after_fields'      . $in_wp_end; });
+
+	if ( ! has_action( 'comment_form_before_fields' ) )        add_action( 'comment_form_before_fields',        function() use( $in_wp_begin,        $in_wp_end )        { echo $in_wp_begin        . 'comment_form_before_fields'     . $in_wp_end; });
+
+	if ( ! has_action( 'comment_form_must_log_in_after' ) )    add_action( 'comment_form_must_log_in_after',    function() use( $in_wp_begin,        $in_wp_end )        { echo $in_wp_begin        . 'comment_form_must_log_in_after' . $in_wp_end; });
+
+	// COMMENTS FORM + BOTH LOGGED IN AND LOGGED OUT:
+
+	if ( ! has_action( 'comment_form_before' ) )               add_action( 'comment_form_before',               function() use( $in_wp_begin,        $in_wp_end )        { echo $in_wp_begin        . 'comment_form_before'            . $in_wp_end; });
+
+	if ( ! has_action( 'comment_form_top' ) )                  add_action( 'comment_form_top',                  function() use( $in_wp_begin,        $in_wp_end )        { echo $in_wp_begin        . 'comment_form_top'               . $in_wp_end; });
+
+	if ( ! has_action( 'comment_form_after' ) )                add_action( 'comment_form_after',                function() use( $in_wp_begin,        $in_wp_end )        { echo $in_wp_begin        . 'comment_form_after'             . $in_wp_end; });
+
+	if ( ! has_action( 'comment_form_comments_closed' ) )      add_action( 'comment_form_comments_closed',      function() use( $in_wp_begin,        $in_wp_end )        { echo $in_wp_begin        . 'comment_form_comments_closed'   . $in_wp_end; });
+
+	add_action( 'comment_form', __NAMESPACE__ .'\demo_comment_form' );
+
+	function demo_comment_form() {
+		global $in_wp_begin;
+		global $in_wp_end;
+		echo $in_wp_begin . 'comment_form' . $in_wp_end;
+	}

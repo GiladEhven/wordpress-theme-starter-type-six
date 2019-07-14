@@ -47,6 +47,13 @@ h6.code {
 	white-space: nowrap;
 }
 
+.wp-in-wp {
+	background-color: #9ad0f9;
+	border: solid 1px #4b9ed8;
+	margin: 2px;
+	width: calc( 100% - 4px );
+}
+
 .col-1,
 .col-2,
 .col-3,
