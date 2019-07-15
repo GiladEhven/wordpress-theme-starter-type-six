@@ -108,6 +108,12 @@
 
 	if ( ! has_action( 'h_comments_else_end' ) )               add_action( 'h_comments_else_end',               function() use( $in_deep_row_begin,  $in_deep_row_end )  { echo $in_deep_row_begin  . 'h_comments_else_end'            . $in_deep_row_end; });
 
+	if ( ! has_action( 'h_comments_footer_begin' ) )           add_action( 'h_comments_footer_begin',           function() use( $in_nothing_begin,   $in_nothing_end )   { echo $in_nothing_begin   . 'h_comments_footer_begin'        . $in_nothing_end; });
+
+	if ( ! has_action( 'h_comments_footer_end' ) )             add_action( 'h_comments_footer_end',             function() use( $in_nothing_begin,   $in_nothing_end )   { echo $in_nothing_begin   . 'h_comments_footer_end'          . $in_nothing_end; });
+
+	if ( ! has_action( 'h_comments_after' ) )                  add_action( 'h_comments_after',                  function() use( $in_row_begin,       $in_row_end )       { echo $in_row_begin       . 'h_comments_after'               . $in_row_end; });
+
 	if ( ! has_action( 'h_main_end' ) )                        add_action( 'h_main_end',                        function() use( $in_row_begin,       $in_row_end )       { echo $in_row_begin       . 'h_main_end'                     . $in_row_end; });
 
 	if ( ! has_action( 'h_main_after' ) )                      add_action( 'h_main_after',                      function() use( $in_nothing_begin,   $in_nothing_end )   { echo $in_nothing_begin   . 'h_main_after'                   . $in_nothing_end; });

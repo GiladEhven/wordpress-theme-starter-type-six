@@ -137,6 +137,8 @@
 
                 <?php
 
+                    h_comments_footer_begin();
+
                     $aria_req      = ( $req ? " aria-required='true'" : '' );
 
                     $user_data     = get_userdata( get_current_user_id() );
@@ -173,6 +175,8 @@
 
                     ) );
 
+                    h_comments_footer_end();
+
                 ?>
 
             </div>
@@ -180,3 +184,7 @@
         </footer>
 
 </div>
+
+<?php
+
+    h_comments_after();

@@ -109,6 +109,9 @@
     function h_comments_else_header()            { do_action( 'h_comments_else_header' );            }
     function h_comments_else_section()           { do_action( 'h_comments_else_section' );           }
     function h_comments_else_end()               { do_action( 'h_comments_else_end' );               }
+    function h_comments_footer_begin()           { do_action( 'h_comments_footer_begin' );           }
+    function h_comments_footer_end()             { do_action( 'h_comments_footer_end' );             }
+    function h_comments_after()                  { do_action( 'h_comments_after' );                 }
 
     function h_main_end()                        { do_action( 'h_main_end' );                        }
     function h_main_after()                      { do_action( 'h_main_after' );                      }
